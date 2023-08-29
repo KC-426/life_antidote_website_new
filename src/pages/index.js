@@ -22,14 +22,12 @@ import { PrevArrow, NextArrow } from "../components/Other/SliderArrow";
 import SectionTitleOne from "../components/Sections/SectionTitle/SectionTitleOne";
 import Slider from "react-slick";
 import Counter from "./homepages/homepage7";
-// import BrandsOne from "../components/Sections/Brands/BrandsOne";
 import BrandSlideOne from "../components/Sections/BrandSlide/BrandSlideOne";
 import ShippingData from "./homepages/homepage8";
 import Services from "./homepages/homepage9";
 import Rate from "../components/Other/Rate";
 import Benefits from "../components/Other/Benefits";
 import Carousel from "react-multi-carousel";
-// import "react-multi-carousel/lib/styles.css";
 
 export default function homepage1() {
   console.log(sliderData);
@@ -74,41 +72,6 @@ export default function homepage1() {
   console.log(category);
   console.log("main start", brands);
 
-  const settings = {
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    className: "product-slide__wrapper",
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1170,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
   const setting = {
     speed: 500,
     slidesToShow: 3,
@@ -146,7 +109,25 @@ export default function homepage1() {
 
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 5,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
+  const responsiveReview = {
+    superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -197,34 +178,6 @@ export default function homepage1() {
     },
   ];
 
-  // const brandObj = [
-  //   {
-  //     _id: "1",
-  //     title: "img_1",
-  //     url: "/assets/images/brands/BrandsOne/1.png",
-  //   },
-  //   {
-  //     _id: "2",
-  //     title: "img_2",
-  //     url: "/assets/images/brands/BrandsOne/2.png",
-  //   },
-  //   {
-  //     _id: "3",
-  //     title: "img_3",
-  //     url: "/assets/images/brands/BrandsOne/3.png",
-  //   },
-  //   {
-  //     _id: "4",
-  //     title: "img_4",
-  //     url: "/assets/images/brands/BrandsOne/4.png",
-  //   },
-  //   {
-  //     _id: "5",
-  //     title: "img_5",
-  //     url: "/assets/images/brands/BrandsOne/5.png",
-  //   },
-  // ];
-
   return (
     <LayoutOne title="Homepage 1" data={sliderData} className="-style-1">
       <SliderTwo data={data} className="-style-1" showDots />
@@ -251,8 +204,6 @@ export default function homepage1() {
         />
       </div>
 
-      {/* <BrandSlideOne data={brands} /> */}
-
       <div className="brand-slide brands_homepage_slider">
         <div className="container">
           <SectionTitleOne align="center" spaceBottom="50px">
@@ -275,22 +226,7 @@ export default function homepage1() {
                 </div>
               ))}
             </Carousel>
-            ;
-            {/* <Slider {...settings}>
-              {brands?.map((data, index) => (
-                <div key={data._id}>
-                  <div className="brand_card_">
-                    <img
-                      src={data?.main_category_image?.image_url}
-                      width="210"
-                      height="200"
-                    ></img>
-                  </div>
 
-                  <div className="title">{data?.main_category_name} </div>
-                </div>
-              ))}
-            </Slider> */}
           </div>
         </div>
       </div>
@@ -305,7 +241,7 @@ export default function homepage1() {
           </SectionTitleOne>
 
           <div className="product-slider video_reviews_slider">
-            <Slider {...setting}>
+            <Carousel responsive={responsiveReview}>
               {reviewObj.map((data, index) => (
                 <div className="video_review_box" key={data._id}>
                   <div className="review_card">
@@ -322,7 +258,7 @@ export default function homepage1() {
                   <div className="title country">{data.title}</div>
                 </div>
               ))}
-            </Slider>
+             </Carousel>
           </div>
         </div>
       </div>

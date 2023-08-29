@@ -15,14 +15,6 @@
     height: 100%;
     
   }
-
-  /* .brand-slider .slick-slider{
-   
-    display: flex;
-    align-items: center;
-   
-  } */
-  
   .slider {
     width: 100%;
     height: 100%;
@@ -42,7 +34,7 @@
   
   .title {
     font-size: 15px;
-    margin-top: -5px;
+    margin-top: 7px;
     text-align: center;
   }
 
