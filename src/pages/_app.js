@@ -3,6 +3,7 @@ import { PersistGate } from "redux-persist/lib/integration/react";
 import { persistor, store } from "../redux/store";
 import { ToastContainer } from "react-toastify";
 import ScrollToTop from "react-scroll-to-top";
+import "react-multi-carousel/lib/styles.css";
 
 import "../styles/styles.scss";
 import Loading from "../components/Other/Loading";

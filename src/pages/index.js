@@ -28,6 +28,8 @@ import ShippingData from "./homepages/homepage8";
 import Services from "./homepages/homepage9";
 import Rate from "../components/Other/Rate";
 import Benefits from "../components/Other/Benefits";
+import Carousel from "react-multi-carousel";
+// import "react-multi-carousel/lib/styles.css";
 
 export default function homepage1() {
   console.log(sliderData);
@@ -142,6 +144,25 @@ export default function homepage1() {
     ],
   };
 
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
 
   const reviewObj = [
     {
@@ -212,12 +233,11 @@ export default function homepage1() {
       <div>
         {/* <ShippingData /> */}
         <Benefits />
-        
       </div>
       <div>
-      <SectionTitleOne align="center" spaceBottom="20px">
-            Our Services
-          </SectionTitleOne>
+        <SectionTitleOne align="center" spaceBottom="20px">
+          Our Services
+        </SectionTitleOne>
         <Services />
       </div>
       <ProductSlideOne data={category} />
@@ -232,36 +252,54 @@ export default function homepage1() {
       </div>
 
       {/* <BrandSlideOne data={brands} /> */}
-      <div className="brand-slide brands_homepage_slider" >
+
+      <div className="brand-slide brands_homepage_slider">
         <div className="container">
           <SectionTitleOne align="center" spaceBottom="50px">
             Our Brands
           </SectionTitleOne>
 
           <div className="brand-slider">
-            <Slider {...settings}>
+            <Carousel responsive={responsive}>
               {brands?.map((data, index) => (
                 <div key={data._id}>
-                  <div className="brand_card">
-                    <img src={data?.main_category_image?.image_url} width="210" height="200"></img>
+                  <div className="brand_card_">
+                    <img
+                      src={data?.main_category_image?.image_url}
+                      width="210"
+                      height="200"
+                    ></img>
                   </div>
 
                   <div className="title">{data?.main_category_name} </div>
                 </div>
               ))}
-            </Slider>
+            </Carousel>
+            ;
+            {/* <Slider {...settings}>
+              {brands?.map((data, index) => (
+                <div key={data._id}>
+                  <div className="brand_card_">
+                    <img
+                      src={data?.main_category_image?.image_url}
+                      width="210"
+                      height="200"
+                    ></img>
+                  </div>
+
+                  <div className="title">{data?.main_category_name} </div>
+                </div>
+              ))}
+            </Slider> */}
           </div>
         </div>
       </div>
 
       <div className="product-slide video_review_homepage_slider">
-
-      <div>
-            <Counter />
-          </div> 
+        <div>
+          <Counter />
+        </div>
         <div className="container">
-          
-
           <SectionTitleOne align="center" spaceBottom="50px">
             Client Reviews
           </SectionTitleOne>
@@ -282,7 +320,6 @@ export default function homepage1() {
                   </div>
                   <div className="name">{data.name}</div>
                   <div className="title country">{data.title}</div>
-                  
                 </div>
               ))}
             </Slider>
