@@ -15,13 +15,13 @@
     height: 100%;
   }
 
-  .brand-slider .slick-slider{
+   .slick-slider{
+     position: relative;
+     box-sizing: border-box;
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 100%;
-    position: relative;
-    box-sizing: border-box;
-   display: flex;
-   align-items: center;
   }
   
   .slider {
