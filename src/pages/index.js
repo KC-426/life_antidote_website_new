@@ -124,13 +124,13 @@ export default function homepage1() {
       {
         breakpoint: 992,
         setting: {
-          slidesToShow: 3,
+          slidesToShow: 1,
         },
       },
       {
         breakpoint: 768,
         setting: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         },
       },
       {
@@ -232,21 +232,21 @@ export default function homepage1() {
       </div>
 
       {/* <BrandSlideOne data={brands} /> */}
-      <div className="product-slide brands_homepage_slider">
+      <div className="brand-slide brands_homepage_slider" >
         <div className="container">
           <SectionTitleOne align="center" spaceBottom="50px">
             Our Brands
           </SectionTitleOne>
 
-          <div className="product-slider">
+          <div className="brand-slider">
             <Slider {...settings}>
               {brands?.map((data, index) => (
                 <div key={data._id}>
-                  <div className="card">
+                  <div className="brand_card">
                     <img src={data?.main_category_image?.image_url} width="210" height="200"></img>
                   </div>
 
-                  <div className="title">{data?.main_category_image?.image_name} </div>
+                  <div className="title">{data?.main_category_name} </div>
                 </div>
               ))}
             </Slider>
@@ -270,7 +270,7 @@ export default function homepage1() {
             <Slider {...setting}>
               {reviewObj.map((data, index) => (
                 <div className="video_review_box" key={data._id}>
-                  <div className="card">
+                  <div className="review_card">
                     <iframe
                       title={data.title}
                       width="320"

@@ -1,0 +1,72 @@
+.brand-slide {
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .brand-slider {
+    width: 100%;
+    height: 100%;
+  }
+
+  .brand-slider .slick-slider{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+   display: flex;
+   align-items: center;
+  }
+  
+  .slider {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .brand_card {
+    width: 210px;
+    height: 260px;
+    margin: 0 10px;
+  }
+  
+  .brand_card img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+  }
+  
+  .title {
+    font-size: 15px;
+    margin-top: -5px;
+    text-align: center;
+  }
+
+  
+  @media (max-width: 768px) {
+    .brand-slide {
+      height: 300px;
+      display: flex table-column;
+    }
+    .brand_card{
+      margin-bottom: -1rem;
+    }
+    .brand-slide {
+      margin-bottom: 7rem;
+    }
+ 
+    .card {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .title {
+      font-size: 14px;
+      margin-top: -20px;
+    }
+}
