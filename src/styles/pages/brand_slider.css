@@ -36,6 +36,7 @@
     font-size: 15px;
     margin-top: 7px;
     text-align: center;
+
   }
 
   
@@ -44,12 +45,16 @@
       height: 300px;
       display: flex table-column;
     }
-    .brand_card{
+    .brand_card_{
+      height: 160px;
+      width: 160px;
       margin-bottom: -1rem;
       align-items: center;
       text-align: center;
     }
-    .brand_card img{
+    .brand_card_ img{
+        height: 160px;
+        width: 160px;
       align-items: center;
       text-align: center;
     }
@@ -57,14 +62,14 @@
       margin-bottom: 7rem;
     }
  
-    .card {
-      width: 150px;
-      height: 150px;
+    .brand_card_ {
+      width: 100px;
+      height: 120px;
     }
   
     .title {
       font-size: 14px;
-      margin-top: 10px;
-      text-align: center;
+      margin-top: 60px;
+      margin-left: -2rem;
     }
 }

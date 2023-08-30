@@ -14,7 +14,7 @@ function Product({ data, type, className }) {
     try {
       const url_pro = `${baseUrl}/api/all/products`;
       const res_pro = await axios.get(url_pro, { withCredentials: true });
-      setProduct(res_pro.data.allProducts);arch
+      setProduct(res_pro.data.allProducts);
     } catch (err) {
       console.log(err);
     }
