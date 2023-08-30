@@ -197,8 +197,8 @@ export default function homepage1() {
 
       <div className="container">
         <ShopProducts
-          gridColClass="col-12 col-sm-6 col-md-4 col-lg-3"
-          listColClass="col-12 col-lg-6"
+          gridColClass="col-6 col-sm-6 col-md-4 col-lg-3"
+          listColClass="col-6 col-lg-6"
           view={"grid"}
           data={product.slice(0, 12)}
         />

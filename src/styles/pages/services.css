@@ -67,6 +67,7 @@ h2 {
   .services_content {
     flex-basis: calc(50% - 2 * 1rem); 
     /* text-align: center; */
+    margin: 13px;
     
   }
   .services_main_data{
