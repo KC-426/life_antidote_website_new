@@ -8,12 +8,9 @@ font-family: 'Almarai', sans-serif;
 margin-bottom: 3.5rem;
 }
 
-@media (max-width: 768px) {
-   
+/* Adjust styles for larger screens */
+@media (max-width: 400px) {
+  .shop-products__grid .grid-col {
+    width: calc(33.33% - 30px); /* Three products in a row for tablet */
   }
-
-
-  @media (min-width: 992px) {
-   
-  }
-  
+}
