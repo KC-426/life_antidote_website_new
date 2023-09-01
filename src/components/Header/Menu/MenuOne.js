@@ -9,7 +9,7 @@ export default function MenuOne({ container }) {
   return (
     <div className="menu -style-1">
       <div className={renderContainer(container)}>
-        <div className="menu__wrapper">
+        <div className="menu__wrapper nav_main_container">
           <Link href="/">
             <a className="menu__wrapper__logo">
               <img src="/life_antidote.png" alt="Logo" />
