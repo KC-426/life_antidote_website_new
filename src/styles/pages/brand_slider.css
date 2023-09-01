@@ -57,7 +57,7 @@
         height: 160px;
         width: 160px;
       align-items: center;
-      text-align: center;
+      margin-left: 1rem;
     }
     .brand-slide {
       margin-bottom: 7rem;
@@ -71,6 +71,15 @@
     .title {
       font-size: 14px;
       margin-top: 60px;
-      margin-left: -1rem;
+      text-align: center;
     }
+}  
+
+@media (max-width: 425px) {
+  .brand_card_ img{
+    height: 160px;
+    width: 160px;
+  align-items: center;
+  margin-left: 0rem;
+}
 }
