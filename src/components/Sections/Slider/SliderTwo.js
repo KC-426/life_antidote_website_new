@@ -14,7 +14,7 @@ export default function SliderTwo({ className, data, showArrows, showDots }) {
     setSliderIndex(0);
   }, []);
 
-  console.log(data)
+  console.log(data);
   const settings = {
     dots: showDots,
     arrows: showArrows,
@@ -50,7 +50,7 @@ export default function SliderTwo({ className, data, showArrows, showDots }) {
             <div
               className={"slider__carousel__item " + `slider-${index + 1}`}
               key={index}
-              style={{width: "100%"}}
+              style={{ width: "100%" }}
             >
               <div className="container">
                 <div className="slider-background">
@@ -60,11 +60,13 @@ export default function SliderTwo({ className, data, showArrows, showDots }) {
                     classNames="slider-zoom-in"
                     unmountOnExit
                   >
-                    <img
-                      src={slide?.image_url}
-                      alt="Slider image"
-                      style={{width: "100%", objectFit: "contain",  height: "auto"}}
-                    />
+                    <div className="slider_image_data">
+                      <img
+                        src={slide?.image_url}
+                        alt="Slider image"
+                        className="responsive-image"
+                      />
+                    </div>
                   </CSSTransition>
                 </div>
                 <div className="slider-content">
