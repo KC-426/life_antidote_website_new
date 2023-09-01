@@ -5,6 +5,7 @@ import Slider from "react-slick";
 
 import Button from "../../Control/Button";
 import { PrevArrow, NextArrow } from "../../Other/SliderArrow";
+import { MdHeight } from "react-icons/md";
 
 export default function SliderTwo({ className, data, showArrows, showDots }) {
   const [sliderIndex, setSliderIndex] = useState();
@@ -49,6 +50,7 @@ export default function SliderTwo({ className, data, showArrows, showDots }) {
             <div
               className={"slider__carousel__item " + `slider-${index + 1}`}
               key={index}
+              style={{width: "100%"}}
             >
               <div className="container">
                 <div className="slider-background">
@@ -61,6 +63,7 @@ export default function SliderTwo({ className, data, showArrows, showDots }) {
                     <img
                       src={slide?.image_url}
                       alt="Slider image"
+                      style={{width: "100%", objectFit: "contain",  height: "auto"}}
                     />
                   </CSSTransition>
                 </div>

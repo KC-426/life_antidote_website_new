@@ -5,7 +5,7 @@ import data from "../../data/benefits/data.json";
 export default function Benefits({ spaceBottom }) {
   return (
     <div
-      className="benefits"
+      className="benefits_main_data"
       style={{ marginBottom: spaceBottom || 100 / 16 + "rem" }}
     >
       <div className="container">

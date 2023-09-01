@@ -331,9 +331,9 @@
 // custom css anjali
 .slider.-style-1, .slider.-style-5{margin-bottom: 40px !important;}
 
-// @media (max-width: 425px) {
-//   .slider-background img{
-//     max-height: 100%;
-//     max-width: 100%;
-//   }
-// }
+@media (max-width: 425px) {
+  .slider-background img{
+    max-height: 100%;
+    max-width: 100%;
+  }
+}

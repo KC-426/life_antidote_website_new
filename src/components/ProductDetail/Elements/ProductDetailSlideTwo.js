@@ -57,7 +57,7 @@ export default function ProductDetailSlideTwo({ data }) {
           {data &&
             data.images.map((img, index) => (
               <div key={index} className="slider__item">
-                <img src={img.image_url} alt="Product image" /> 
+                {/* <img src={img.image_url} alt="Product image" />  */}
               </div>
             ))}
         </Slider>

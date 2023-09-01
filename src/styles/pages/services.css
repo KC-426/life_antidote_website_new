@@ -66,25 +66,24 @@ h2 {
 @media (max-width: 768px) {
   .services_content {
     flex-basis: calc(50% - 2 * 1rem); 
-    /* text-align: center; */
     margin: 13px;
     
   }
   .services_main_data{
     text-align-last: center;
     align-items: center;
-    /* margin-left: ; */
   }
+
 }
 
 @media (max-width: 480px) {
   .header_heading_data {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .dummy_data_para {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }

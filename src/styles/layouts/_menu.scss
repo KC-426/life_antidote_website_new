@@ -14,6 +14,7 @@
     align-items: center;
     position: relative;
     justify-content: space-between;
+    
     &__logo {
       img {
         @include imgCenter(auto, 10em);
@@ -77,7 +78,7 @@
               position: absolute;
               top: 50%;
               left: -100%;
-              background-color: #f2646061;
+              background-color: #04888d50;
               height: emCal(15, 8);
               width: 100%;
 
@@ -507,5 +508,140 @@
         }
       }
     }
+  }
+}
+
+// menu five
+
+// .menufiveHeader{
+//   width: 100%;
+//   background: black;
+// }
+
+// .menufiveContainer {
+//   width: 90vw;
+//   margin: auto;
+//   display: flex;
+//   flex-wrap: wrap;
+//   position: relative;
+//   justify-content: center;
+
+//   nav>ul {
+//     display: flex;
+//   }
+
+//   nav>ul>li{
+//     padding: 30px 20px;
+//     list-style: none;
+//     color: white;
+//   }
+
+//   .megamenu{
+//     position: absolute;
+//     top: 120%;
+//     display: flex;
+//     flex-wrap: wrap;
+//     left: 0;
+//     width: 100%;
+//     opacity: 0;
+//     visibility: hidden;
+//     transition: ease-in;
+//     box-shadow: 0px 10px 2px 3px lightblue;
+//     z-index: 10;
+//   }
+
+//   .megamenuItems {
+//     flex-basis: 31%;
+//     margin: 1%;
+//   }
+
+//   .megamenuItems ul li {
+//     list-style: none;
+//     padding: 7px;
+//   }
+
+//   .megamenuItems h3{
+//     padding: 10px;
+//     background: lightgrey;
+//   }
+
+//   nav>ul>li:hover .megamenu{
+//     top: 100%;
+//     opacity: 1;
+//     visibility: visible;
+//   }
+// }
+
+.menufiveHeader {
+  width: 100%;
+  background: black;
+  
+  /* For Mobile Phones Portrait or Landscape View */
+  @media screen and (max-device-width: 992px) {
+    display: none;
+  }
+}
+
+.menufiveContainer {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  font-family: sans-serif;
+
+  nav > ul {
+    display: flex;
+    font-family: sans-serif;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between; /* Distribute items evenly */
+  }
+
+  nav > ul > li {
+    padding: 15px 10px; /* Adjust padding for smaller screens */
+    list-style: none;
+    color: white;
+    font-family: sans-serif;
+  }
+
+  .megamenu {
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    color: black;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-in;
+    z-index: 10;
+  }
+
+  .megamenuItems {
+    flex-basis: calc(
+      33.33% - 2%
+    ); /* Adjust flex-basis for responsive columns */
+    margin: 1%;
+    font-family: sans-serif;
+  }
+
+  .megamenuItems ul li {
+    list-style: none;
+    padding: 7px;
+    font-family: sans-serif;
+  }
+
+  .megamenuItems h3 {
+    padding: 10px;
+    font-family: sans-serif;
+  }
+
+  nav > ul > li:hover .megamenu {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
   }
 }
