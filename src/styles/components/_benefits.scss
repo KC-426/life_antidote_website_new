@@ -2,14 +2,19 @@
   @include mq(lg) {
     font-size: 16px;
   }
+
   &__item {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    
     &:hover {
       .benefits__item__icon {
         animation: pulse 1s forwards;
       }
     }
+
     @include mq(lg) {
       margin-bottom: emCal(16, 30);
     }

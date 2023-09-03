@@ -1,11 +1,9 @@
   @media (max-width: 768px) {
-    .benefits_main_data {
-  margin-left: 3.5rem;
-  margin-top: -30px;
+    .container{
+      margin-bottom: 10px;
     }
-    
     .benefits__item {
-      padding: 8px;
+      padding: 3px;
       align-items: center;
     }
   }
