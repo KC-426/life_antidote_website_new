@@ -1,5 +1,6 @@
 import LayoutOne from "../components/Layout/LayoutOne";
 import SliderTwo from "../components/Sections/Slider/SliderTwo";
+import { SlideThree } from "../components/Sections/Slider/SlideThree";
 import sliderData from "../data/slider/sliderOne.json";
 import IntroductionOne from "../components/Sections/Introduction/IntroductionOne";
 import introductionOneData from "../data/introduction/introductionOne.json";
@@ -36,6 +37,7 @@ export default function homepage1() {
   const [product, setProduct] = useState([]);
   const [category, setCategory] = useState([]);
   const [banner, setBannner] = useState([]);
+  const [ mobile, setMobile ] = useState([]);
   const [brands, setBrands] = useState([]);
 
   const fetchData = async () => {
@@ -60,6 +62,11 @@ export default function homepage1() {
       const url_brands = `${baseUrl}/api/get/brand`;
       const res_brand = await axios.get(url_brands, { withCredentials: true });
       setBrands(res_brand.data.findBrands);
+
+      const url_mobile = `${baseUrl}/api/mobile/get/all/banners`;
+      const res_mobile = await axios.get(url_mobile, { withCredentials: true });
+      console.log(res_mobile)
+      setMobile(res_mobile.data);
     } catch (err) {
       console.log(err);
     }
@@ -181,6 +188,7 @@ export default function homepage1() {
   return (
     <LayoutOne title="Homepage 1" data={sliderData} className="-style-1">
       <SliderTwo data={data} className="-style-1" showDots />
+      <SlideThree data={mobile} />
       <IntroductionOne data={introductionOneData} />
       {/* <IntroductionTwo data={introductionTwoData} />  */}
       <div>

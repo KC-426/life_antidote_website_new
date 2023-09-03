@@ -1,7 +1,10 @@
 .slider {
   position: relative;
   overflow: hidden;
-  background-color: white;
+  background-color: #f4f4f4;
+  @media screen and (max-device-width: 992px) {
+    display: none;
+  }
   @include mq(md) {
     font-size: 14px;
   }
@@ -52,7 +55,7 @@
     &__item {
       display: flex !important;
       align-items: center;
-      height: 42em;
+      height: 35em;  // SLIDER HEIGHT
       position: relative;
       z-index: 2;
       outline: 0;
@@ -327,13 +330,10 @@
   }
 }
 
-
-// custom css anjali
-.slider.-style-1, .slider.-style-5{margin-bottom: 40px !important;}
-
-@media (max-width: 425px) {
-  .slider-background img{
-    max-height: 100%;
-    max-width: 100%;
+.slidethree{
+  margin-bottom: 20px;
+  @media screen and (min-device-width: 992px) {
+    display: none;
   }
 }
+

@@ -5,7 +5,6 @@ import Slider from "react-slick";
 
 import Button from "../../Control/Button";
 import { PrevArrow, NextArrow } from "../../Other/SliderArrow";
-import { MdHeight } from "react-icons/md";
 
 export default function SliderTwo({ className, data, showArrows, showDots }) {
   const [sliderIndex, setSliderIndex] = useState();
@@ -13,13 +12,12 @@ export default function SliderTwo({ className, data, showArrows, showDots }) {
   useEffect(() => {
     setSliderIndex(0);
   }, []);
-
-  console.log(data);
   const settings = {
     dots: showDots,
     arrows: showArrows,
-    infinite: false,
-    speed: 500,
+    infinite: true,
+    speed: 1000,
+    autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
@@ -43,14 +41,13 @@ export default function SliderTwo({ className, data, showArrows, showDots }) {
     },
   };
   return (
-    <div className={`slider ${classNames(className)}`}>
+    <div className={`slider ${classNames(className)} bannerwala`}>
       <div className="slider__carousel">
         <Slider {...settings}>
-          {data?.map((slide, index) => (
+          {data.map((slide, index) => (
             <div
               className={"slider__carousel__item " + `slider-${index + 1}`}
               key={index}
-              style={{ width: "100%" }}
             >
               <div className="container">
                 <div className="slider-background">
@@ -60,14 +57,12 @@ export default function SliderTwo({ className, data, showArrows, showDots }) {
                     classNames="slider-zoom-in"
                     unmountOnExit
                   >
-                    <div className="slider_image_data">
-                      <img
-                        src={slide?.image_url}
-                        alt="Slider image"
-                        className="responsive-image"
-                      />
-                    </div>
+                    <img
+                      src={slide?.image_url}
+                      alt="Slider image"
+                    />
                   </CSSTransition>
+                 
                 </div>
                 <div className="slider-content">
                   {slide?.subTitle && (
@@ -142,5 +137,6 @@ export default function SliderTwo({ className, data, showArrows, showDots }) {
         </Slider>
       </div>
     </div>
+    
   );
 }

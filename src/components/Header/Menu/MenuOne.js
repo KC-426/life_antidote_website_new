@@ -9,12 +9,13 @@ export default function MenuOne({ container }) {
   return (
     <div className="menu -style-1">
       <div className={renderContainer(container)}>
-        <div className="menu__wrapper nav_main_container">
+        <div className="menu__wrapper">
           <Link href="/">
             <a className="menu__wrapper__logo">
               <img src="/life_antidote.png" alt="Logo" />
             </a>
           </Link>
+          {/* <div class="menu-toggle">&#9776;</div> */}
           <Navigator />
           <MenuFunctionIcons />
         </div>
