@@ -136,7 +136,7 @@ export default function Navigator({ data }) {
   }
 
   function renderMegaMenu() {
-    return data.map((item, index) => {
+    return data?.map((item, index) => {
       if(item.subcategory.length > 0) { 
       return <li className="relative" key={index}>
         <Link href="#">

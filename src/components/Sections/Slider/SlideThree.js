@@ -30,15 +30,15 @@ export const SlideThree = ({ data,showArrows,showDots }) => {
               <div style={{
                 width:"100%",
                 display:"flex",
-                justifyContent:"center"
+                justifyContent:"center",
               }} >
               <img
                 style={{
-                  width: "99%",
+                  width: "100%",
                   alignSelf:"center",
                   height: "auto",
                   objectFit: "cover",
-                  paddingTop: "5%",
+                  paddingTop: "0%",
                 }}
                 src={item.image_url}
               />

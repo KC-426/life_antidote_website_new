@@ -2,6 +2,7 @@ import React from "react";
 import Product from "../Product";
 import classNames from "classnames";
 import SectionTitleOne from "../Sections/SectionTitle/SectionTitleOne";
+import { Breadcrumb, BreadcrumbItem } from "../../components/Other/Breadcrumb";
 
 export default function ShopProducts(props) {
   const { gridColClass, listColClass, fiveCol, view, data } = props;
@@ -15,11 +16,16 @@ export default function ShopProducts(props) {
     <div className="shop-products">
       {view === "grid" ? (
         <div className="shop-products__grid">
-
-        {/* <div className="our_products_heading">Our Products</div> */}
-        <SectionTitleOne align="center" spaceBottom="50px">
+          {/* <div className="our_products_heading">Our Products</div> */}
+          {/* <SectionTitleOne align="center" spaceBottom="50px">
             Our Products
-          </SectionTitleOne>
+          </SectionTitleOne> */}
+
+          <Breadcrumb title=" Our Products">
+            <BreadcrumbItem name="Home" />
+            <BreadcrumbItem name="Our Products" current />
+          </Breadcrumb>
+
           {data && (
             <div className="row">
               {data.map((item, index) => {
@@ -35,7 +41,6 @@ export default function ShopProducts(props) {
                       "five-col": fiveCol,
                     })}
                   >
-                
                     <Product data={item} />
                   </div>
                 );

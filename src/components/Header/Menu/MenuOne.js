@@ -15,7 +15,6 @@ export default function MenuOne({ container }) {
               <img src="/life_antidote.png" alt="Logo" />
             </a>
           </Link>
-          {/* <div class="menu-toggle">&#9776;</div> */}
           <Navigator />
           <MenuFunctionIcons />
         </div>
