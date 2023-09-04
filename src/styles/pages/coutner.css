@@ -72,3 +72,24 @@
     }
   }
   
+
+  @media (max-width: 360px) {
+    .main_container {
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+    }
+  
+    .no1 {
+      width: 100%;
+      margin: 8px;
+    }
+  
+    .font_data {
+      font-size: 1.2rem;
+    }
+  
+    h1 {
+      font-size: 1rem;
+    }
+  }

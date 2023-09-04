@@ -98,3 +98,18 @@
   margin-left: 0rem;
 }
 }
+
+@media (max-width: 365px) {
+  .brand_card_ img{
+    height: 150px;
+    width: 135px;
+  align-items: center;
+  margin-left: 0rem;
+}
+
+.title {
+  font-size: 14px;
+  margin-top: 55px;
+margin-left: 1rem;
+}
+}
