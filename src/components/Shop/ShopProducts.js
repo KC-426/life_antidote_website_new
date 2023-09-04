@@ -2,12 +2,21 @@ import React from "react";
 import Product from "../Product";
 import classNames from "classnames";
 import SectionTitleOne from "../Sections/SectionTitle/SectionTitleOne";
+import { useState } from "react";
+import ProductData from "../../pages/products";
+import Link from "next/link";
 
 export default function ShopProducts(props) {
   const { gridColClass, listColClass, fiveCol, view, data } = props;
   let arr = [5];
   for (var i = 0; i < Math.round(data.length / 5); i++) {
     arr.push(arr[i] + 6);
+  }
+
+  const [viewProducts, setViewProducts] = useState(false)
+  const handleClick = () => {
+    setViewProducts(!viewProducts);
+    console.log('clicked !!')
   }
 
   console.log(data);
@@ -57,6 +66,25 @@ export default function ShopProducts(props) {
           )}
         </div>
       )}
+
+<div>
+      <Link href="/products">
+        <a
+          onClick={handleClick}
+          style={{
+            color: "#fff",          
+            fontSize: "16px",       
+            textDecoration: "none", 
+            padding: "10px 16px",    
+            backgroundColor: "#007bff", 
+            borderRadius: "4px", 
+          }}
+        >
+          {viewProducts ? 'Hide Products' : 'View Products'}
+        </a>
+      </Link>
+      {viewProducts && <ProductData />} 
+    </div>
     </div>
   );
 }
