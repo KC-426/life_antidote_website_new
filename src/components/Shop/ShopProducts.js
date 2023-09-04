@@ -17,14 +17,14 @@ export default function ShopProducts(props) {
       {view === "grid" ? (
         <div className="shop-products__grid">
           {/* <div className="our_products_heading">Our Products</div> */}
-          {/* <SectionTitleOne align="center" spaceBottom="50px">
+          <SectionTitleOne align="center" spaceBottom="50px">
             Our Products
-          </SectionTitleOne> */}
+          </SectionTitleOne>
 
-          <Breadcrumb title=" Our Products">
+          {/* <Breadcrumb title=" Our Products">
             <BreadcrumbItem name="Home" />
             <BreadcrumbItem name="Our Products" current />
-          </Breadcrumb>
+          </Breadcrumb> */}
 
           {data && (
             <div className="row">
