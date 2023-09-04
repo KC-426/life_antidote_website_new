@@ -186,7 +186,7 @@ export default function homepage1() {
   ];
 
   return (
-    <LayoutOne title="Homepage 1" data={sliderData} className="-style-1">
+    <LayoutOne title="Life Antidote" data={sliderData} className="-style-1">
       <SliderTwo data={data} className="-style-1" showDots />
       <SlideThree data={mobile} />
       <IntroductionOne data={introductionOneData} />

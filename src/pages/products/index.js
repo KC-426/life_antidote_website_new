@@ -3,7 +3,6 @@ import { baseUrl } from "../../../config";
 import axios from "axios";
 import ShopProducts from "../../components/Shop/ShopProducts";
 import LayoutOne from "../../components/Layout/LayoutOne";
-import { Breadcrumb, BreadcrumbItem } from "../../components/Other/Breadcrumb";
 
 function Product({ data, type, className }) {
   const [product, setProduct] = useState([]);
@@ -28,11 +27,6 @@ function Product({ data, type, className }) {
   return (
     <LayoutOne title="Homepage 1" className="-style-1">
       <div className="container">
-          <Breadcrumb title=" Our Products">
-            <BreadcrumbItem name="Home" />
-            <BreadcrumbItem name="Our Products" current />
-          </Breadcrumb>
-          
         <ShopProducts
           gridColClass="col-6 col-sm-6 col-md-4 col-lg-3"
           listColClass="col-6 col-lg-6"
