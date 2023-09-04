@@ -20,8 +20,8 @@ export default function ShopProducts(props) {
           <SectionTitleOne align="center" spaceBottom="50px">
             Our Products
           </SectionTitleOne>
-
-          {/* <Breadcrumb title=" Our Products">
+{/* 
+          <Breadcrumb title=" Our Products">
             <BreadcrumbItem name="Home" />
             <BreadcrumbItem name="Our Products" current />
           </Breadcrumb> */}
