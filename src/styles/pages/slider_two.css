@@ -35,4 +35,10 @@
   }
 }
 
+@media (min-width: 3001px) and (max-width: 4000px) {
+  .slider .slider__carousel__item {
+    height: 70em !important;
+  }
+}
+
 
