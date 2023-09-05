@@ -213,6 +213,10 @@ export default function homepage1() {
       </div>
       <ProductSlideOne data={category} />
 
+      <SectionTitleOne align="center" spaceBottom="50px" className="sectionTitleOne_data">
+            Our Products
+          </SectionTitleOne>
+          
       <div className="container">
         <ShopProducts
           gridColClass="col-6 col-sm-6 col-md-4 col-lg-3"

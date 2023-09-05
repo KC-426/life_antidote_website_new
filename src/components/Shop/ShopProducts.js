@@ -22,9 +22,9 @@ export default function ShopProducts(props) {
         <div className="shop-products__grid">
 
         {/* <div className="our_products_heading">Our Products</div> */}
-        <SectionTitleOne align="center" spaceBottom="50px" className="sectionTitleOne_data">
+        {/* <SectionTitleOne align="center" spaceBottom="50px" className="sectionTitleOne_data">
             Our Products
-          </SectionTitleOne>
+          </SectionTitleOne> */}
 
           {/* <Breadcrumb title="Our Products">
         <BreadcrumbItem name="Home" />
