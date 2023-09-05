@@ -78,8 +78,8 @@ h2 {
 
 @media (max-width: 768px) {
   .services_content {
-    flex-basis: calc(50% - 20px); /* Adjusted margin to 20px */
-    margin: 13px; /* Keep top and bottom margin */
+    flex-basis: calc(50% - 20px); 
+    margin: 10px; 
   }
   .services_main_data {
     justify-content: center;
@@ -108,10 +108,10 @@ h2 {
   }
 }
 
-@media (max-width: 355px) {
+@media (max-width: 355px) and (min-width: 290px) {
   .services_content {
     padding: 2.2rem;
-    margin: 10px; /* Remove left and right margin */
+    margin: 6px; 
     line-height: 13px;
   }
 
