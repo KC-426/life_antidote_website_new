@@ -5,11 +5,20 @@ import ClientOnlyPortal from "../../../common/ClientOnlyPortal";
 import NavigatorMobile from "./NavigatorMobile";
 import SocialIcons from "../../Other/SocialIcons";
 import Select from "../../Control/Select";
+import { useForm } from "react-hook-form";
 
 export default function MobileNavSidebar({ showMobileNav, setShowMobileNav }) {
+  const { register, handleSubmit } = useForm();
+
   const [searchInput, setSearchInput] = useState("");
-  const [currency, setCurrency] = useState("USD");
-  const [language, setLanguage] = useState("ENG");
+  // const [currency, setCurrency] = useState("USD");
+  // const [language, setLanguage] = useState("ENG");
+
+  function onSubmit(data) {
+    console.log(data);
+    window.location.replace(`/shop/search/${data.search}`)
+  }
+
   return (
     <>
       <ClientOnlyPortal selector="#nav-sidebar">
@@ -21,10 +30,11 @@ export default function MobileNavSidebar({ showMobileNav, setShowMobileNav }) {
         >
           <div className="navigation-sidebar">
             <div className="search-box">
-              <form>
+            <form onSubmit={handleSubmit(onSubmit)}>
                 <input
                   type="text"
                   placeholder="What are you looking for?"
+                  name="search"
                   value={searchInput}
                   onChange={(e) => setSearchInput(e.target.value)}
                 />
