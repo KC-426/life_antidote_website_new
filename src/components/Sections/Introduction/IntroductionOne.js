@@ -20,6 +20,7 @@ export default function IntroductionOne({ data }) {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-12 col-md-6">
+            {/* <div className="display_main_data"> */}
             <div className="introduction-one__image">
               <div className="introduction-one__image__detail">
                 <img
@@ -67,6 +68,7 @@ export default function IntroductionOne({ data }) {
                 <br />
                 {data.title.span}
               </SectionTitleOne>
+              {/* </div> */}
               <p>{data.description}</p>
               {/* <Button
                 color={data.btn.color}

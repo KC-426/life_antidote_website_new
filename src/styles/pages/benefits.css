@@ -7,3 +7,22 @@
       align-items: center;
     }
   }
+
+@media (max-width: 356px) {
+  .container {
+    margin-bottom: 10px;
+  }
+  .benefits__item {
+    padding: 3px;
+    margin-bottom: 5px;
+    display: flex; 
+    align-items: center;
+  }
+  .benefits__item__icon {
+    margin-bottom: 10px; 
+    font-size: 18px;
+  }
+  .benefits___data {
+    margin-bottom: -60px;
+  }
+}

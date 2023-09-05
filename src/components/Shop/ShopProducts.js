@@ -5,6 +5,7 @@ import SectionTitleOne from "../Sections/SectionTitle/SectionTitleOne";
 import { useState } from "react";
 import ProductData from "../../pages/products";
 import Link from "next/link";
+import { Breadcrumb, BreadcrumbItem } from "../../components/Other/Breadcrumb";
 
 export default function ShopProducts(props) {
   const { gridColClass, listColClass, fiveCol, view, data } = props;
@@ -13,11 +14,6 @@ export default function ShopProducts(props) {
     arr.push(arr[i] + 6);
   }
 
-  const [viewProducts, setViewProducts] = useState(false)
-  const handleClick = () => {
-    setViewProducts(!viewProducts);
-    console.log('clicked !!')
-  }
 
   console.log(data);
   return (
@@ -26,9 +22,14 @@ export default function ShopProducts(props) {
         <div className="shop-products__grid">
 
         {/* <div className="our_products_heading">Our Products</div> */}
-        <SectionTitleOne align="center" spaceBottom="50px">
+        <SectionTitleOne align="center" spaceBottom="50px" className="sectionTitleOne_data">
             Our Products
           </SectionTitleOne>
+
+          {/* <Breadcrumb title="Our Products">
+        <BreadcrumbItem name="Home" />
+        <BreadcrumbItem name="Our Products" current />
+      </Breadcrumb> */}
           {data && (
             <div className="row">
               {data.map((item, index) => {
@@ -67,24 +68,7 @@ export default function ShopProducts(props) {
         </div>
       )}
 
-<div>
-      <Link href="/products">
-        <a
-          onClick={handleClick}
-          style={{
-            color: "#fff",          
-            fontSize: "16px",       
-            textDecoration: "none", 
-            padding: "10px 16px",    
-            backgroundColor: "#007bff", 
-            borderRadius: "4px", 
-          }}
-        >
-          {viewProducts ? 'Hide Products' : 'View Products'}
-        </a>
-      </Link>
-      {viewProducts && <ProductData />} 
-    </div>
+
     </div>
   );
 }

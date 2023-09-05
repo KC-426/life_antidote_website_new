@@ -9,7 +9,7 @@ export default function Benefits({ spaceBottom }) {
       style={{ marginBottom: spaceBottom || 100 / 16 + "rem" }}
     >
       <div className="container">
-        <div className="row">
+        <div className="row benefits___data">
           {data.map((b, index) => (
             <div key={index} className="col-12 col-sm-6 col-lg-3">
               <div className="benefits__item">

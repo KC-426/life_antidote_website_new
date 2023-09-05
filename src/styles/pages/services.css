@@ -19,8 +19,8 @@ body {
 }
 
 .services_content {
-  flex-basis: calc(33.33% - 2rem);
-  margin: 10px;
+  flex-basis: calc(33.33% - 20px); /* Adjusted margin to 20px */
+  margin: 10px; /* Keep top and bottom margin */
   padding: 2rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   text-align: center;
@@ -61,33 +61,32 @@ h2 {
   font-size: 14px;
   padding-top: 15px;
 }
+
 @media (max-width: 1024px) {
   h2 {
     font-size: 3.5rem;
-    margin-bottom: 0.5rem; 
+    margin-bottom: 0.5rem;
   }
 }
-
 
 @media (max-width: 992px) {
   h2 {
     font-size: 3rem;
-    margin-bottom: 0.5rem; 
+    margin-bottom: 0.5rem;
   }
 }
 
-
 @media (max-width: 768px) {
   .services_content {
-    flex-basis: calc(50% - 2rem);
-    margin: 13px;
+    flex-basis: calc(50% - 20px); /* Adjusted margin to 20px */
+    margin: 13px; /* Keep top and bottom margin */
   }
   .services_main_data {
     justify-content: center;
   }
   h2 {
     font-size: 2.5rem;
-    margin-bottom: 0.5rem; 
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -101,28 +100,26 @@ h2 {
     width: 80px;
     margin-bottom: -9px;
   }
-  .services_content{
-   padding: 0.9rem;
-   text-align: left;
+  .services_content {
+    padding: 0.9rem;
   }
   .dummy_data_para {
     font-size: 0.7rem;
-
   }
 }
 
-@media (max-width: 332px) {
+@media (max-width: 355px) {
   .services_content {
-    padding: 0.9rem;
-    margin: 10px;
-    text-align: left;
+    padding: 2.2rem;
+    margin: 10px; /* Remove left and right margin */
+    line-height: 13px;
   }
-  
+
   .services_content h2 {
     font-size: 12px;
     text-align: center;
   }
-  
+
   .service_image img {
     height: 70px;
     width: 70px;
@@ -133,7 +130,5 @@ h2 {
     font-size: 0.65rem;
     line-height: 0;
     padding-top: 8px;
-    text-align: left;
   }
 }
-

@@ -29,8 +29,18 @@ import Services from "./homepages/homepage9";
 import Rate from "../components/Other/Rate";
 import Benefits from "../components/Other/Benefits";
 import Carousel from "react-multi-carousel";
+// import ProductData from "../../pages/products";
+
+import Link from "next/link";
 
 export default function homepage1() {
+
+  // const [viewProducts, setViewProducts] = useState(false)
+  // const handleClick = () => {
+  //   setViewProducts(!viewProducts);
+  //   console.log('clicked !!')
+  // }
+
   console.log(sliderData);
 
   const [data, setData] = useState([]);
@@ -211,6 +221,24 @@ export default function homepage1() {
           data={product.slice(0, 12)}
         />
       </div>
+
+      <div className="view_products_page">
+      <Link href="/products">
+        <a
+          style={{
+            color: "#fff",
+            fontSize: "18px",
+            textDecoration: "none",
+            padding: "10px 16px", 
+            backgroundColor: "#007bff",
+            borderRadius: "4px",
+            // display: "block", 
+            textAlign: "center",
+          }}
+        > View Product
+        </a>
+      </Link>
+    </div>
 
       <div className="brand-slide brands_homepage_slider">
         <div className="container">

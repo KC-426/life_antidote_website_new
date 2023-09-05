@@ -11,6 +11,10 @@ margin-bottom: 3.5rem;
 /* Adjust styles for larger screens */
 @media (max-width: 400px) {
   .shop-products__grid .grid-col {
-    width: calc(33.33% - 30px); /* Three products in a row for tablet */
+    width: calc(33.33% - 30px);
+  }
+
+  .sectionTitleOne_data{
+    margin-top: -40px;
   }
 }

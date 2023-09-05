@@ -1,13 +1,42 @@
 import { useForm } from "react-hook-form";
-
 import LayoutFour from "../../components/Layout/LayoutOne";
 import InstagramTwo from "../../components/Sections/Instagram/InstagramTwo";
 import { Breadcrumb, BreadcrumbItem } from "../../components/Other/Breadcrumb";
 import ContactInfoItem from "../../components/Pages/Contact/ContactInfoItem";
 import contactData from "../../data/pages/contact.json";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function () {
-  const { register, handleSubmit, watch, errors } = useForm();
+
+  const inqForm = useRef();
+
+  const sendMail = () => {
+    emailjs.sendForm("service_cajvj1m", "template_3fylys8", inqForm.current, "Xr116sEP70G2mVG4W")
+      .then(
+        (result) => {
+          console.log('message sent !!', result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    console.log(
+      name,
+      email,
+      message
+    );
+  }
+
+  const { register, watch, errors } = useForm();
   const onSubmit = (data) => console.log(data);
   return (
     <LayoutFour title="Contact us">
@@ -33,11 +62,13 @@ export default function () {
             <div className="col-12 col-md-6">
               <h3 className="contact-title">Get in touch</h3>
               <div className="contact-form">
-                <form onSubmit={handleSubmit(onSubmit)}>
+              <form ref={inqForm} onSubmit={handleSubmit}>
                   <div className="input-validator">
                     <input
                       type="text"
                       name="name"
+                      onChange={(e) => setName(e.target.value)}
+                      value={name}
                       placeholder="Name"
                       ref={register({ required: true })}
                     />
@@ -49,6 +80,8 @@ export default function () {
                     <input
                       type="text"
                       name="email"
+                      onChange={(e) => setEmail(e.target.value)}
+                      value={email}
                       placeholder="Email"
                       ref={register({ required: true })}
                     />
@@ -59,15 +92,28 @@ export default function () {
                     )}
                   </div>
                   <div className="input-validator">
-                    <textarea
+                    {/* <textarea
                       name="message"
-                      id=""
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                      id="message"
                       cols="30"
                       rows="3"
                       placeholder="Message"
-                    />
+                    /> */}
+
+                   <textarea
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    id="message"
+                    name="message"
+                    cols="30"
+                    rows="3"
+                    placeholder="Message"
+                  />
+
                   </div>
-                  <button className="btn -dark">SEND MESSAGE</button>
+                  <button className="btn -dark" type="submit" onClick={sendMail}>SEND MESSAGE</button>
                 </form>
               </div>
             </div>
