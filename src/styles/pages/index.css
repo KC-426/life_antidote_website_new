@@ -28,7 +28,7 @@ iframe {
 .video_reviews_slider .video_review_box .title{margin: 0;font-size: 14px;margin-top: -10px;}
 .video_review_homepage_slider{margin-bottom: 40px !important;}
 .brands_homepage_slider{margin-top: 40px !important; }
-.brand-slider {z-index: 6 !important; }
+.react-multiple-carousel__arrow {z-index: 6 !important; }
 .homepage_category_logos{margin-bottom: 40px !important;}
 .homepage_category_logos .product-slider .product{min-height: auto;box-shadow: none;padding: 0;}
 .homepage_category_logos .product-slider .product .product__content__header{display: none;}

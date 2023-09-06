@@ -141,7 +141,7 @@ input, textarea{
           }
         }
 
-        @media (max-width: 425px) and (min-width: 320px){
+        @media (max-width: 425px) and (min-width: 31px){
           .product-detail__content {
             padding: 5px;
           }
