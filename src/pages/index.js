@@ -238,7 +238,7 @@ export default function homepage1() {
             Our Brands
           </SectionTitleOne>
 
-          <div className="brand-slider">
+          <div className="brand-slider"style={{ zIndex: 6 }}>
             <Carousel responsive={responsive}>
               {brands?.map((data, index) => (
                 <div key={data._id}>
