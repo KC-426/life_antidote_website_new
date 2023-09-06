@@ -109,12 +109,15 @@ h2 {
 }
 
 @media (max-width: 355px) and (min-width: 290px) {
+  .services_main_data{
+    margin: -8px;
+  }
   .services_content {
-    flex-basis: calc(53% - 20px); 
+    flex-basis: calc(54% - 20px); 
     margin: 10px; 
   }
   .services_content {
-    padding: 23px;
+    padding: 25px;
     margin: 3px; 
     line-height: 13px;
   }
