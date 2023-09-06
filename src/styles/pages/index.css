@@ -26,9 +26,9 @@ iframe {
 .video_reviews_slider .video_review_box{text-align: center;}
 .video_reviews_slider .video_review_box .name{margin: 0;font-size: 17px;font-weight: bold;margin-top: 15px;}
 .video_reviews_slider .video_review_box .title{margin: 0;font-size: 14px;margin-top: -10px;}
-.video_review_homepage_slider{margin-bottom: 70px !important;}
-.brands_homepage_slider{margin-top: 70px !important;}
-.homepage_category_logos{margin-bottom: 70px !important;}
+.video_review_homepage_slider{margin-bottom: 40px !important;}
+.brands_homepage_slider{margin-top: 40px !important;}
+.homepage_category_logos{margin-bottom: 40px !important;}
 .homepage_category_logos .product-slider .product{min-height: auto;box-shadow: none;padding: 0;}
 .homepage_category_logos .product-slider .product .product__content__header{display: none;}
 .homepage_category_logos .product-slider .product img{height: auto !important;}

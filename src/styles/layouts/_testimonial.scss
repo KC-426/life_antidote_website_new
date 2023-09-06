@@ -1,6 +1,6 @@
 .testimonial {
   background-color: #f7f5f4;
-  padding: remCal(100) 0;
+  padding: 0.25rem 0;
   margin-bottom: remCal(100);
   .slide-nav {
     @include mq(md) {

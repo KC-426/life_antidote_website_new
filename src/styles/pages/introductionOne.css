@@ -35,9 +35,16 @@
       .introduction-one{
         margin-top: 40px;
       }
+      .introduction-one .container .introduction-one__content h5{
+        margin-bottom: -35px;
+            }
   }
 
-  
+  @media (max-width: 425px) {
+    .introduction-one .container .introduction-one__content h5{
+      margin-bottom: -37px;
+          }
+  }
   
   @media (max-width: 355px) {
     .introduction-one{
@@ -57,4 +64,8 @@
             color: #888; 
             margin-bottom: 1.875em;
       }
+     .introduction-one .container .introduction-one__content h5{
+  margin-bottom: -35px;
+      }
   }
+

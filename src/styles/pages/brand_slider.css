@@ -97,6 +97,11 @@
   align-items: center;
   margin-left: 0rem;
 }
+.title {
+  font-size: 14px;
+  margin-top: 60px;
+margin-left: 0rem;
+}
 }
 
 @media (max-width: 365px) {
