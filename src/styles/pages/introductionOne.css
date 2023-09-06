@@ -1,9 +1,9 @@
 .description_data p{
-    font-size: 16px; /* Replace with your desired font-size */
-    line-height: 1.875; /* Replace with your desired line-height */
-    font-weight: 400; /* Replace with your desired font-weight */
-    color: #888; /* Replace with your desired text color */
-    margin-bottom: 1.875em; /* Replace with your desired margin-bottom */
+    font-size: 16px;
+    line-height: 1.875; 
+    font-weight: 400; 
+    color: #888; 
+    margin-bottom: 1.875em; 
     display: flex;
 }
 .row.align-items-center {
@@ -22,6 +22,17 @@
     width: 100%;
     margin-top: 1.875em;
   }
+
+  @media (max-width: 768px) {
+    .align-items-center{
+      flex-direction: column-reverse;
+    }
+    .introduction-one {
+        display: flex;
+        flex-direction: row;
+      }
+  }
+
   
   
   @media (max-width: 355px) {
