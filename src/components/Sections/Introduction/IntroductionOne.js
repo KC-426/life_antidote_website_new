@@ -19,7 +19,8 @@ export default function IntroductionOne({ data }) {
     <div className="introduction-one">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-12 col-md-6 col-sm-6 order-sm-first order-first">
+          {/* <div className="col-12 col-md-6 col-sm-6 order-sm-first order-first"> */}
+          <div className="col-12 col-md-6">
             {/* <div className="display_main_data"> */}
             <div className="introduction-one__image">
               <div className="introduction-one__image__detail">
@@ -58,7 +59,8 @@ export default function IntroductionOne({ data }) {
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-sm-6 order-sm-last order-last">
+          {/* <div className="col-12 col-md-6 col-sm-6 order-sm-last order-last"> */}
+          <div className="col-12 col-md-6">
             <div className="introduction-one__content">
               <h5>
                 {data.subTitle.main} <span>{data.subTitle.span}</span>
