@@ -227,20 +227,8 @@ export default function homepage1() {
       </div>
 
       <div className="view_products_page">
-      <Link href="/products">
-        <a
-          style={{
-            color: "#fff",
-            fontSize: "18px",
-            textDecoration: "none",
-            padding: "10px 16px", 
-            backgroundColor: "#007bff",
-            borderRadius: "4px",
-            // display: "block", 
-            textAlign: "center",
-          }}
-        > View Product
-        </a>
+      <Link href="/products" className="btn">
+         View Product
       </Link>
     </div>
 

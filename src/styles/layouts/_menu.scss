@@ -17,7 +17,7 @@
     
     &__logo {
       img {
-        @include imgCenter(auto, 10em);
+        @include imgCenter(auto, 12.5em);
       }
     }
     .navigator {
@@ -664,6 +664,6 @@
   }
 }
 @media only screen and (max-width: 425px){
-  .menu__wrapper__logo img{width: 36%;}
-  .menu{padding: 10px 0;}
+  .menu__wrapper__logo img{width: 46%;}
+  .menu{padding: 0px 0;}
 }

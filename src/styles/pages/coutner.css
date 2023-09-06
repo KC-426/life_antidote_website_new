@@ -74,6 +74,9 @@
   
 
   @media (max-width: 360px) {
+    .main_container{
+      margin-top: -30px;
+    }
     .main_container {
       flex-direction: column;
       align-items: center;
@@ -84,11 +87,17 @@
       width: 100%;
       margin: 8px;
     }
-  
-    .font_data {
-      font-size: 1.2rem;
+    .counter_main_data{
+      margin-top: 30px;
+    }
+    .counter_last_heading{
+      margin-bottom: 30px;
     }
   
+    .font_data {
+      font-size: 1.5rem;
+    }
+ 
     h1 {
       font-size: 1rem;
     }

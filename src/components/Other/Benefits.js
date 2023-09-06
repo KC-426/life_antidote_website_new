@@ -14,7 +14,10 @@ export default function Benefits({ spaceBottom }) {
             <div key={index} className="col-12 col-sm-6 col-lg-3">
               <div className="benefits__item">
                 <div className="benefits__item__icon">
-                  <img src={b.image} alt={b.name} />
+                  <img style={{
+          filter: "hue-rotate(240deg)"
+        }}
+                  src={b.image} alt={b.name} />
                 </div>
                 <div className="benefits__item__content">
                   <h5>{b.name}</h5>

@@ -8,7 +8,7 @@ export default function Services() {
           
             {/* <div className="header_heading_data"><span>Pharmaceutical Export Services</span></div> */}
         <div class="services_main_data">
-        <div class="services_content">
+        <div class="services_content main_content1">
           <div class="service_image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
           <h2>Hospital Supplies</h2>
           <span className="dummy_data_para">
@@ -18,7 +18,7 @@ export default function Services() {
           </span>
         </div>
     
-        <div class="services_content">
+        <div class="services_content main_content2">
         <div class="service_image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
           <h2>Clinical Trial Supplies</h2>
           <span className="dummy_data_para">
@@ -28,7 +28,7 @@ export default function Services() {
           </span>
         </div>
     
-        <div class="services_content">
+        <div class="services_content main_content3">
         <div class="service_image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
           <h2>Bio Similar Supplies</h2>
           <span className="dummy_data_para">
@@ -37,7 +37,7 @@ export default function Services() {
           </span>
         </div>
     
-        <div class="services_content">
+        <div class="services_content main_content4">
         <div class="service_image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
           <h2>Government Supplies</h2>
           <span className="dummy_data_para">
@@ -46,7 +46,7 @@ export default function Services() {
           </span>
         </div>
     
-        <div class="services_content">
+        <div class="services_content main_content5">
         <div class="service_image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
           <h2>Orphan Drug Supplies</h2>
           <span className="dummy_data_para">
@@ -56,7 +56,7 @@ export default function Services() {
           </span>
         </div>
     
-        <div class="services_content">
+        <div class="services_content main_content6">
         <div class="service_image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
           <h2>Temperature Controlled</h2>
           <span className="dummy_data_para">

@@ -32,7 +32,7 @@ const Counter = () => {
   return (
     <div>
       <div className="main_container counter_section">
-        <div className="no1">
+        <div className="no1 counter_main_data">
           <div className="font_data">
             <h3><FaUsers /></h3>
           </div>
@@ -56,7 +56,7 @@ const Counter = () => {
           <p>Brands</p>
         </div>
 
-        <div className="no1">
+        <div className="no1 counter_last_heading">
           <div className="font_data">
             <h3><FaGlobeAsia /></h3>
           </div>

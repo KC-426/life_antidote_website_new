@@ -25,7 +25,8 @@
         $fw: 600,
         $cpt: true
       );
-      margin-bottom: emCal(40, 10);
+      margin-bottom: 0.15em;
+      margin-top: 0.15em;
     }
     p {
       @include typo(

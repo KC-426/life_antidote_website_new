@@ -23,7 +23,9 @@ export default function SectionTitleOne({
       <h2 style={{ fontSize: titleSize }}>{children}</h2>
       {description && <p>{description}</p>}
       {!hideDecoration && (
-        <img
+        <img style={{
+          filter: "hue-rotate(240deg)"
+        }}
           src="/assets/images/introduction/IntroductionOne/content-deco.png"
           alt="decoration"
         />

@@ -19,24 +19,21 @@ export default function IntroductionOne({ data }) {
     <div className="introduction-one">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 col-sm-6 order-sm-first order-first">
             {/* <div className="display_main_data"> */}
             <div className="introduction-one__image">
               <div className="introduction-one__image__detail">
-                <img
-                  src="/assets/images/ab_2.jpg"
-                  alt="background"
-                />
-                <img
-                  src="/assets/images/ab_1.jpg"
-                  alt="background"
-                />
+                <img src="/assets/images/ab_2.jpg" alt="background" />
+                <img src="/assets/images/ab_1.jpg" alt="background" />
               </div>
               <div className="wrapper">
                 <div className="introduction-one__image__background">
                   <div className="background__item">
                     <div ref={bg1} className="wrapper">
                       <img
+                        style={{
+                          filter: "hue-rotate(240deg)",
+                        }}
                         data-depth="0.5"
                         src="/assets/images/introduction/IntroductionOne/bg1.png"
                         alt="background"
@@ -46,6 +43,9 @@ export default function IntroductionOne({ data }) {
                   <div className="background__item">
                     <div ref={bg2} className="wrapper">
                       <img
+                        style={{
+                          filter: "hue-rotate(240deg)",
+                        }}
                         data-depth="0.3"
                         data-invert-x
                         data-invert-y
@@ -58,7 +58,7 @@ export default function IntroductionOne({ data }) {
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 col-sm-6 order-sm-last order-last">
             <div className="introduction-one__content">
               <h5>
                 {data.subTitle.main} <span>{data.subTitle.span}</span>

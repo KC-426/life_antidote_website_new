@@ -4,6 +4,7 @@ import axios from "axios";
 import ShopProducts from "../../components/Shop/ShopProducts";
 import LayoutOne from "../../components/Layout/LayoutOne";
 import { Breadcrumb, BreadcrumbItem } from "../../components/Other/Breadcrumb";
+import LayoutFour from "../../components/Layout/LayoutOne";
 
 function Product({ data, type, className }) {
   const [product, setProduct] = useState([]);
@@ -25,42 +26,36 @@ function Product({ data, type, className }) {
   }, []);
 
   return (
-    <LayoutOne title="Homepage 1" className="-style-1">
-      <div className="container">
+    // <LayoutOne title="Homepage 1" className="-style-1">
+    // <LayoutFour title="Our Products">
+    // <div className="container">
 
-        
-          <Breadcrumb title="Our Products">
+    //     <Breadcrumb title="Our Products">
+    //   <BreadcrumbItem name="Home" />
+    //   <BreadcrumbItem name="Our Products" current />
+    // </Breadcrumb>
+    <LayoutFour title={"Our Products"}>
+      {/* <div className="container"> */}
+
+      <Breadcrumb title="Our Products">
         <BreadcrumbItem name="Home" />
         <BreadcrumbItem name="Our Products" current />
       </Breadcrumb>
 
-        <ShopProducts
-          gridColClass="col-6 col-sm-6 col-md-4 col-lg-3"
-          listColClass="col-6 col-lg-6"
-          view={"grid"}
-          data={product.slice(0, 12)}
-        />
+      <ShopProducts
+        gridColClass="col-6 col-sm-6 col-md-4 col-lg-3"
+        listColClass="col-6 col-lg-6"
+        view={"grid"}
+        data={product.slice(0, 12)}
+      />
 
-
-        
-      </div>
-    </LayoutOne>
+      {/* </div> */}
+    </LayoutFour>
+    // </LayoutOne>
   );
 }
 
 export default Product;
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import { useState, useEffect } from "react";
 // import { useSelector, useDispatch } from "react-redux";
@@ -107,9 +102,6 @@ export default Product;
 //     fetchData();
 //   }, []);
 
-
- 
-
 //   useEffect(() => {
 //     let sortedProduct = getProductbyFilter(
 //       productData,
@@ -145,12 +137,12 @@ export default Product;
 //                         gridColClass="col-12 col-sm-6 col-md-4 col-lg-3"
 //                         listColClass="col-12 col-lg-6"
 //                         view={"grid"}
-//                         data={product.slice(0, 12)} 
+//                         data={product.slice(0, 12)}
 //                       />
 //                     </div>
 //                     <Paginator
 //                       pageContainerClass="paginator"
-//                       totalRecords={product.length} 
+//                       totalRecords={product.length}
 //                       pageLimit={pageLimit}
 //                       pageNeighbours={2}
 //                       setOffset={setOffset}
@@ -166,9 +158,5 @@ export default Product;
 //       </div>
 //     </LayoutOne>
 //   );
-  
+
 // }
-
-
-
-
