@@ -91,6 +91,9 @@ h2 {
 }
 
 @media (max-width: 425px) {
+  .services_main_data{
+    margin: -15px;
+  }
   .services_content h2 {
     font-size: 15px;
     text-align: center;
@@ -101,7 +104,7 @@ h2 {
     margin-bottom: -9px;
   }
   .services_content {
-    padding: 0.9rem;
+    padding: 15px;
   }
   .dummy_data_para {
     font-size: 0.7rem;
