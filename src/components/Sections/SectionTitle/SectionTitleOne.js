@@ -12,6 +12,7 @@ export default function SectionTitleOne({
   titleSize,
 }) {
   return (
+    <div className="section_title_servies">
     <div
       className={`section-title -style1 ${classNames(className)}`}
       style={{
@@ -23,13 +24,15 @@ export default function SectionTitleOne({
       <h2 style={{ fontSize: titleSize }}>{children}</h2>
       {description && <p>{description}</p>}
       {!hideDecoration && (
-        <img style={{
+        <img 
+        style={{
           filter: "hue-rotate(240deg)"
         }}
           src="/assets/images/introduction/IntroductionOne/content-deco.png"
           alt="decoration"
         />
       )}
+    </div>
     </div>
   );
 }
