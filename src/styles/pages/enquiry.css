@@ -174,3 +174,17 @@ input, textarea{
         margin-bottom: 1rem;
     }
 }
+
+@media screen and (max-width: 425px) {
+  .popup-content {
+      width: 87%;
+      padding: 30px;
+  }
+
+  .button,
+  .close {
+      margin-left: 0;
+      margin-bottom: 1rem;
+  }
+
+}
