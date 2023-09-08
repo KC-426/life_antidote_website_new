@@ -307,7 +307,7 @@ export default function ProductDetailInfo({ data, onReviewSubmit, hideTab }) {
                   <div className="popup-content">
                     <h2>Thank You for Submission!</h2>
                     <button
-                      className="close"
+                      className="close close_btn"
                       onClick={() => setShowPopup(false)}
                     >
                       Close

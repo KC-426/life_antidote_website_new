@@ -298,3 +298,9 @@
 
 // custom css anjali
 .product__content__header h5{line-height: 1.5;}
+
+@media (max-width: 768px) {
+.product__thumb__image img{
+  width: 50%;
+}
+}
