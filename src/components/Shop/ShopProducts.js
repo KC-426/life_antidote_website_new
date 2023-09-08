@@ -19,7 +19,7 @@ export default function ShopProducts(props) {
   return (
     <div className="shop-products">
       {view === "grid" ? (
-        <div className="shop-products__grid">
+        <div className="shop-products__grid container">
 
         {/* <div className="our_products_heading">Our Products</div> */}
         {/* <SectionTitleOne align="center" spaceBottom="50px" className="sectionTitleOne_data">
