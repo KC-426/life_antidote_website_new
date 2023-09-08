@@ -757,3 +757,11 @@
     }
   }
 }
+
+
+@media (max-width: 768px){
+  .col-12.col-md-6{
+display:block;
+flex: auto;
+  }
+}

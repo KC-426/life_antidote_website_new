@@ -1,7 +1,7 @@
 .testimonial {
   background-color: #f7f5f4;
-  padding: 0.25rem 0;
-  margin-bottom: remCal(100);
+  padding: 1.8rem 0;
+  margin-bottom: -3.75rem;
   .slide-nav {
     @include mq(md) {
       margin-bottom: emCal(16, 50);

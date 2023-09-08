@@ -191,7 +191,7 @@ export default function Navigator({ data }) {
   return (
     <div className="navigator-mobile">
       <ul>{renderMenu()}</ul>
-      <h4 class="divider line one-line" contenteditable>Our Categories</h4>
+      {/* <h4 class="divider line one-line" contenteditable>Our Categories</h4> */}
       <ul>{renderMegaMenu()}</ul>
     </div>
   );

@@ -60,7 +60,7 @@ input, textarea{
 
 .button, .close{
     display: inline-block;
-    padding: 0.8rem 1.2rem;
+    padding: 7px 12px 2px;
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
@@ -179,12 +179,36 @@ input, textarea{
   .popup-content {
       width: 87%;
       padding: 30px;
+      display: block;
   }
+
+  input, textarea {
+    width: 100%; 
+    padding: 0rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content input, textarea {
+padding: 5px;
+  
+}
+.popup-content label{
+  font-size: 11px;
+}
+
+.name, .message, .phone, .medicine, .email, .country{
+  line-height: 25px;
+}
+
 
   .button,
   .close {
       margin-left: 0;
-      margin-bottom: 1rem;
+      margin-bottom: 0.4rem;
+  }
+  .button{
+    padding: 8px 14px;
   }
 
 }
