@@ -122,7 +122,7 @@ export default function ProductDetailInfo({ data, onReviewSubmit, hideTab }) {
   };
 
   return (
-    <div className="product-detail__content" style={{marginRight: '60px'}}>
+    <div className="product-detail__content" style={{marginRight: '50px'}}>
       <div className="product-detail__content__header">
         <h5>{data.category}</h5>
         <div className="data_name">
