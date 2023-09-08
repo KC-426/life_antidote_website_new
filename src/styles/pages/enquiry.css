@@ -194,11 +194,11 @@ input, textarea{
 }
 
 .popup-content input, textarea {
-padding: 5px;
+padding: 7.5px;
   
 }
 .popup-content label{
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .name, .message, .phone, .medicine, .email, .country{
