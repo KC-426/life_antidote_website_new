@@ -11,11 +11,13 @@ export default function AllProductsCard(props) {
 
   console.log(data);
   return (
-    <div className="shop-products">
+    <div className="shop-products container">
+    
       {view === "grid" ? (
         <div className="shop-products__grid">
           {data && (
             <div className="row">
+
               {data.map((item, index) => {
                 if (fiveCol) {
                   if (arr.includes(index)) {

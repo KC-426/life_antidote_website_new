@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
 
 import ClientOnlyPortal from "../../../common/ClientOnlyPortal";
@@ -6,6 +6,7 @@ import NavigatorMobile from "./NavigatorMobile";
 import SocialIcons from "../../Other/SocialIcons";
 import Select from "../../Control/Select";
 import { useForm } from "react-hook-form";
+import outsideClickHandle from "../../../common/ElementOutsideClick";
 
 export default function MobileNavSidebar({ showMobileNav, setShowMobileNav }) {
   const { register, handleSubmit } = useForm();
@@ -13,7 +14,10 @@ export default function MobileNavSidebar({ showMobileNav, setShowMobileNav }) {
   const [searchInput, setSearchInput] = useState("");
   // const [currency, setCurrency] = useState("USD");
   // const [language, setLanguage] = useState("ENG");
-
+  const wrapperRef = useRef(null);
+  outsideClickHandle(wrapperRef, () => {
+    setShowSearch(false);
+  });
   function onSubmit(data) {
     console.log(data);
     window.location.replace(`/shop/search/${data.search}`)
@@ -35,6 +39,7 @@ export default function MobileNavSidebar({ showMobileNav, setShowMobileNav }) {
                   type="text"
                   placeholder="What are you looking for?"
                   name="search"
+                  ref={register}
                   value={searchInput}
                   onChange={(e) => setSearchInput(e.target.value)}
                 />

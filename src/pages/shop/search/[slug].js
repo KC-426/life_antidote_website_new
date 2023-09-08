@@ -80,6 +80,7 @@ export default function () {
   return (
     // <LayoutOne title="Shop Fullwidth Left Sidebar" container="wide">
     <LayoutOne title="Shop Fullwidth Left Sidebar" >
+
       <Breadcrumb title="Shop Products">
         <BreadcrumbItem name="Home" />
         <BreadcrumbItem name="Shop" current />
