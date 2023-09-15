@@ -36,7 +36,7 @@ const Counter = () => {
           <div className="font_data">
             <h3><FaUsers /></h3>
           </div>
-          <h1>{happyCustomers}+</h1> <br />
+          <div className='counter_main'>{happyCustomers}+</div> <br />
           <p>Happy Customers</p>
         </div>
 
@@ -44,7 +44,7 @@ const Counter = () => {
           <div className="font_data">
             <h3><FaShoppingBasket /></h3>
           </div>
-          <h1>{products}+</h1> <br />
+          <div className='counter_main'>{products}+</div> <br />
           <p>Products</p>
         </div>
 
@@ -52,7 +52,7 @@ const Counter = () => {
           <div className="font_data">
             <h3><MdDiscount /></h3>
           </div>
-          <h1>{brands}+</h1> <br />
+          <div className='counter_main'>{brands}+</div> <br />
           <p>Brands</p>
         </div>
 
@@ -60,7 +60,7 @@ const Counter = () => {
           <div className="font_data">
             <h3><FaGlobeAsia /></h3>
           </div>
-          <h1>{countries}+</h1> <br />
+          <div className='counter_main'>{countries}+</div> <br />
           <p>Countries</p>
         </div>
       </div>

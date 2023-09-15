@@ -55,7 +55,7 @@ export default function homepage1() {
       const url = `${baseUrl}/api/get/all/banners`;
       const res = await axios.get(url, { withCredentials: true });
       setData(res.data);
-
+t
       const url_pro = `${baseUrl}/api/all/products`;
       const res_pro = await axios.get(url_pro, { withCredentials: true });
       setProduct(res_pro.data.allProducts);
