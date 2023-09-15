@@ -85,6 +85,7 @@ t
   useState(() => {
     fetchData();
   }, []);
+  
   console.log(data);
   console.log(category);
   console.log("main start", brands);
