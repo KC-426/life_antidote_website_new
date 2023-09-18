@@ -134,7 +134,7 @@ export default function (data) {
           <BreadcrumbItem name="Shop" />
         </div>
       </Breadcrumb>
-      <div className="product-card-container">
+      <div className="product-card-container container">
         <div className="row">
           {foundProducts.map((category) => (
             <div key={category._id} className="col-md-3">
