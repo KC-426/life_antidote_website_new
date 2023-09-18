@@ -228,7 +228,7 @@ export default function homepage1() {
 
       <div className="view_products_page">
       <Link href="/products" className="btn">
-         View Product
+         View Products
       </Link>
     </div>
 
