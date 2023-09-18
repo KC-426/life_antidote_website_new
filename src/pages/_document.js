@@ -12,9 +12,10 @@ class MyDocument extends Document {
         <Head>
           <meta
             name="Description"
-            content="Eliah - React NextJs Beauty Salon & Cosmetic Shop Template"
+            content="Life-Antidote"
           />
-          <link rel="icon" href="/fav.png" />
+          <link rel="icon" type="image/png" href="/fav.png" />
+          
           <link
             href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css"
             rel="stylesheet"

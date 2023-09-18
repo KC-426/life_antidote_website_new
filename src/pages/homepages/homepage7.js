@@ -22,7 +22,7 @@ const Counter = () => {
       setProducts(prevCount => Math.min(prevCount + 1, targetValues.products));
       setBrands(prevCount => Math.min(prevCount + 1, targetValues.brands));
       setCountries(prevCount => Math.min(prevCount + 1, targetValues.countries));
-    }, 0.001); 
+    }, 150); 
 
     return () => {
       clearInterval(interval); 

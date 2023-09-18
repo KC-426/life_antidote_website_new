@@ -85,6 +85,7 @@ export default function homepage1() {
   useState(() => {
     fetchData();
   }, []);
+  
   console.log(data);
   console.log(category);
   console.log("main start", brands);
