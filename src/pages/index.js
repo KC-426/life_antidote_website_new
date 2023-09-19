@@ -29,9 +29,8 @@ import Services from "./homepages/homepage9";
 import Rate from "../components/Other/Rate";
 import Benefits from "../components/Other/Benefits";
 import Carousel from "react-multi-carousel";
-// import ProductData from "../../pages/products";
-
 import Link from "next/link";
+import Button from "../components/Control/Button";
 
 export default function homepage1() {
 
@@ -196,6 +195,7 @@ export default function homepage1() {
     },
   ];
 
+
   return (
     <LayoutOne title="Life Antidote" data={sliderData} className="-style-1">
       <SliderTwo data={data} className="-style-1" showDots />
@@ -204,7 +204,7 @@ export default function homepage1() {
       {/* <IntroductionTwo data={introductionTwoData} />  */}
       <div>
         {/* <ShippingData /> */}
-        <Benefits />
+        {/* <Benefits /> */}
       </div>
       <div>
         <SectionTitleOne align="center" spaceBottom="20px">
@@ -255,8 +255,15 @@ export default function homepage1() {
                 </div>
               ))}
             </Carousel>
-
           </div>
+
+          <div className="view_brands_page">
+      <Link href="/brands" className="btn">
+         View All Brands
+      </Link>
+    </div>
+
+
         </div>
       </div>
 

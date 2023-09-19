@@ -76,7 +76,7 @@
 
   @media (max-width: 360px) {
     .main_container{
-      margin-top: -30px;
+      margin-top: 40px;
     }
     .main_container {
       flex-direction: column;

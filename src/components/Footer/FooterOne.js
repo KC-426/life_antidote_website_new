@@ -33,12 +33,17 @@ export default function FooterOne() {
             <SocialIcons className="-border" />
           </div>
         </div>
+        
         <div className="footer-one__body">
           <div className="row">
             <div className="col-12 col-md-6 col-lg-4">
               <div className="footer__section -info">
-                <h5 className="footer-title">Contact info</h5>
+                <h5 className="footer-title">About</h5>
                 <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  gravida facilisis.{" "}
+                </p>
+                {/* <p>
                   Address: <span>{footerInfomation.address}</span>
                 </p>
                 <p>
@@ -49,7 +54,7 @@ export default function FooterOne() {
                 </p>
                 <p>
                   Opentime: <span>{footerInfomation.open}</span>
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-4">
@@ -83,21 +88,36 @@ export default function FooterOne() {
               </div>
             </div>
             <div className="col-12 col-lg-4">
-              <div className="footer__section -payment">
+              {/* <div className="footer__section -payment">
                 <h5 className="footer-title">Payment methods</h5>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                   gravida facilisis.{" "}
                 </p>
                 <div className="payment-methods">
-                  {/* <img
+                  <img
                     src={
                       process.env.PUBLIC_URL +
                       "/assets/images/footer/payment.png"
                     }
                     alt="Payment methods"
-                  /> */}
+                  />
                 </div>
+              </div> */}
+              <div className="footer__section -info">
+                <h5 className="footer-title">Contact info</h5>
+                <p>
+                  Address: <span>{footerInfomation.address}</span>
+                </p>
+                <p>
+                  Phone: <span>{footerInfomation.phone}</span>
+                </p>
+                <p>
+                  Email: <span>{footerInfomation.email}</span>
+                </p>
+                <p>
+                  Opentime: <span>{footerInfomation.open}</span>
+                </p>
               </div>
             </div>
           </div>

@@ -104,24 +104,25 @@ import Link from "next/link";
 //     )
 // }
 
-export default function (data) {
-  const [foundBrands, setFoundBrands] = useState([]);
+export default function Brands(data) {
+  // const [foundBrands, setFoundBrands] = useState([]);
+  const [brands, setBrands] = useState([])
 
   const router = useRouter();
   const { slug } = router.query;
 
   useEffect(() => {
-    // const fetchData = async () => {
-    //   try {
-    //     const url = `${baseUrl}/api/all/products/by/cate/${slug}`;
+    const fetchData = async () => {
+      try {
+        const url = `${baseUrl}/api/get/brand`;
 
-    //     const res = await axios.get(url, { withCredentials: true });
-    //     console.log(res);
-    //     setFoundProducts(res?.data?.allProducts);
-    //   } catch (err) {
-    //     console.log(err);
-    //   }
-    // };
+        const res = await axios.get(url, { withCredentials: true });
+        console.log(res);
+        setBrands(res_brand?.data?.findBrands);
+      } catch (err) {
+        console.log(err);
+      }
+    };
 
     fetchData();
   }, []);
@@ -136,7 +137,7 @@ export default function (data) {
       </Breadcrumb>
       <div className="product-card-container">
         <div className="row">
-          {foundProducts.map((brands) => (
+          {brands?.map((brands) => (
             <div key={brands._id} className="col-md-3">
               <div className="product-card">
                 <Link
@@ -144,14 +145,14 @@ export default function (data) {
                   as={`${process.env.PUBLIC_URL}/shop/brands/${brands._id}`}
                 >
                   <a className="product-list__thumb__image">
-                    <img
-                      src={brands?.main_category_image[0]?.image_name}
-                      alt={brands?.product_name}
-                      className="img-fluid"
-                    />
+                  <img
+                      src={data?.main_category_image?.image_url}
+                      width="210"
+                      height="200"
+                    ></img>
                   </a>
                 </Link>
-                <div className="product-name">{brands?.main_category_image?.image_name}</div>
+                <div className="product-name">{data?.main_category_name}</div>
               </div>
             </div>
           ))}

@@ -41,6 +41,12 @@ body{font-family: "Spartan", sans-serif !important;}
   font-size: large;
   margin-top: 15px;
 }
+.view_brands_page{
+  text-align: center;
+  align-items: center;
+  font-size: large;
+  margin-top: 40px;
+}
  .view_products_page  a{
     color: white;
     font-size: 18px;
@@ -49,6 +55,15 @@ body{font-family: "Spartan", sans-serif !important;}
     background-color: rgb(64, 64, 184);
     border-radius: 4px;
     text-align: center;
+}
+.view_brands_page  a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 15px 20px; 
+  background-color: rgb(64, 64, 184);
+  border-radius: 4px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -64,6 +79,10 @@ body{font-family: "Spartan", sans-serif !important;}
 
 @media (max-width: 356px) {
   .view_products_page a {
+    text-align: center;
+    align-items: center;
+  }
+  .view_brands_page a {
     text-align: center;
     align-items: center;
   }
@@ -91,6 +110,14 @@ margin-top: 10px;
     padding: 12px 12px;
     background-color: rgb(64, 64, 184);
   }
+  .view_brands_page {
+    margin-top: 40px;
+      }
+      .view_brands_page a{
+        font-size: 15px;
+        padding: 12px 12px;
+        background-color: rgb(64, 64, 184);
+      }
 } 
 
 
@@ -100,7 +127,18 @@ margin-top: 10px;
     padding: 10px 12px;
     background-color: rgb(64, 64, 184);
   }
+  .view_brands_page{
+    margin-top: 40px;
+    
+  }
+  .view_brands_page a{
+    font-size: 14px;
+    padding: 10px 12px;
+    background-color: rgb(64, 64, 184);
+
+  }
   .section_title_servies{
     margin-top: 40px;
   }
 } 
+
