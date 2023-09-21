@@ -200,19 +200,6 @@ export default function homepage1() {
     <LayoutOne title="Life Antidote" data={sliderData} className="-style-1">
       <SliderTwo data={data} className="-style-1" showDots />
       <SlideThree data={mobile} />
-      <IntroductionOne data={introductionOneData} />
-      {/* <IntroductionTwo data={introductionTwoData} />  */}
-      <div>
-        {/* <ShippingData /> */}
-        {/* <Benefits /> */}
-      </div>
-      <div>
-        <SectionTitleOne align="center" spaceBottom="20px">
-          Our Services
-        </SectionTitleOne>
-        <Services />
-      </div>
-      <ProductSlideOne data={category} />
 
       <SectionTitleOne align="center" spaceBottom="50px" className="sectionTitleOne_data">
             Our Products
@@ -233,6 +220,23 @@ export default function homepage1() {
       </Link>
     </div>
 
+ 
+      {/* <IntroductionTwo data={introductionTwoData} />  */}
+      <div>
+        {/* <ShippingData /> */}
+        {/* <Benefits /> */}
+      </div>
+      <div>
+        <SectionTitleOne align="center" spaceBottom="20px">
+          Our Services
+        </SectionTitleOne>
+        <Services />
+      </div>
+      
+      <ProductSlideOne data={category} />
+
+      <IntroductionOne data={introductionOneData} />
+
       <div className="brand-slide brands_homepage_slider">
         <div className="container">
           <SectionTitleOne align="center" spaceBottom="50px">
@@ -247,7 +251,7 @@ export default function homepage1() {
                     <img
                       src={data?.main_category_image?.image_url}
                       width="210"
-                      height="200"
+                      // height="200"
                     ></img>
                   </div>
 

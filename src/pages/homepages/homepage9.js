@@ -1,155 +1,3 @@
-
-
-
-// export default function Services() {
-//     return(
-//       <div className="container">
-//               <div className="shop-products">
-//         <div className="shop-products__grid">
-
-          
-//             {/* <div className="header_heading_data"><span>Pharmaceutical Export Services</span></div> */}
-//         {/* <div class="services_main_data"> */}
-//         <div className="row">
-  
-//         <div className="product">
-//             <div className="product-type">
-//         <div class="col-6 col-sm-6 col-md-4 col-lg-3 ">
-//            <div className="product__thumb">
-//           <div class="product__thumb__image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
-//           </div>
-//           <div className="product__content">
-//       <div className="product__content__header">
-//           <h2 className="product-category">Hospital Supplies</h2>
-//           </div>
-//           <span className="dummy_data_para">
-//             Pharmaceutical services are supplied and exported through Gandhi
-//             Medicos to hospitals all over the world. We are quality medication
-//             exporter and supplier on a global scale.
-//             </span>
-//         </div>
-//         </div>
-//           </div>
-//           </div>
- 
-//         <div className="product">
-//             <div className="product-type">
-//         <div class="col-6 col-sm-6 col-md-4 col-lg-3 ">
-//            <div className="product__thumb">
-//         <div class="product__thumb__image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
-//         </div>
-//         <div className="product__content">
-//       <div className="product__content__header">
-//           <h2 className="product-category">Clinical Trial Supplies</h2>
-//           </div>
-//           <span className="dummy_data_para">
-//             This isn't the only thing that attracts to Gandhi Medicos. Other
-//             products and clinical items can be used by organisations that want to
-//             perform clinical trials directly.
-//             </span>
-//         </div>
-//         </div>
-//           </div>
-//           </div>
-        
-    
-   
-//         <div className="product">
-//             <div className="product-type">
-//         <div class="col-6 col-sm-6 col-md-4 col-lg-3 ">
-//            <div className="product__thumb">
-//        <div class="product__thumb__image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
-//        </div>
-//         <div className="product__content">
-//       <div className="product__content__header">
-//           <h2 className="product-category">Bio Similar Supplies</h2>
-//           </div>
-//           <span className="dummy_data_para">
-//             Therapeutic biosimilars provide patients with more treatment
-//             alternatives and the possibility of lower-cost healthcare services.
-//             </span>
-//         </div>
-//         </div>
-//           </div>
-//           </div>
-
-//     <div className="product">
-//             <div className="product-type">
-//         <div class="col-6 col-sm-6 col-md-4 col-lg-3 ">
-//            <div className="product__thumb">
-//         <div class="product__thumb__image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
-//         </div>
-//       <div className="product__content">
-//       <div className="product__content__header">
-//           <h2 className="product-category">Government Supplies</h2>
-//           </div>
-//           <span className="dummy_data_para">
-//             With complete trust care and attention Gandhi Medicos provides the
-//             government with world-class pharmaceutical exports.
-//           </span>
-//         </div>
-//         </div>
-//           </div>
-//           </div>
-    
- 
-//           <div className="product">
-//             <div className="product-type">
-//         <div class="col-6 col-sm-6 col-md-4 col-lg-3 ">
-//            <div className="product__thumb">
-//         <div class="product__thumb__image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
-//         </div>
-//         <div className="product__content">
-//       <div className="product__content__header">
-//           <h2 className="product-category">Orphan Drug Supplies</h2>
-//           </div>
-//           <span className="dummy_data_para">
-//             Vagrant medicines are frequently made to treat a small number of
-//             patients who are suffering from the side effects of unusual infections
-//             and disorders.
-//             </span>
-//         </div>
-//         </div>
-//           </div>
-//           </div>
-
-     
-//           <div className="product">
-//             <div className="product-type">
-//         <div class="col-6 col-sm-6 col-md-4 col-lg-3 ">
-//            <div className="product__thumb">
-//         <div class="product__thumb__image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
-//         </div>
-//         <div className="product__content">
-//       <div className="product__content__header">
-//           <h2 className="product-category">Temperature Controlled</h2>
-//           </div>
-//           <span className="dummy_data_para">
-//             Gandhi Medicos offers comprehensive shipping, storage, and end-to-end
-//             production network arrangements to meet all of your
-//             temperature-sensitive medicinal requirements.
-//            </span>
-//         </div>
-//         </div>
-//           </div>
-//           </div>
-
-//       </div>
-//       {/* </div> */}
-//        </div>
-//        </div>
-//         </div>
-//     )
-// }
-
-
-
-
-
-
-
-
-
 export default function Services() {
     return(
       <div className="container">
@@ -168,7 +16,7 @@ export default function Services() {
         </div>
     
         <div class="services_content">
-        <div class="service_image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
+        <div class="service_image"><img src="/assets/images/clinical trial.png" alt="" height={'100px'} width={'100px'}/></div>
           <h2>Clinical Trial Supplies</h2>
           <span className="dummy_data_para">
             This isn't the only thing that attracts to Gandhi Medicos. Other
@@ -178,7 +26,7 @@ export default function Services() {
         </div>
     
         <div class="services_content">
-        <div class="service_image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
+        <div class="service_image"><img src="/assets/images/bio.png" alt="" height={'100px'} width={'100px'}/></div>
           <h2>Bio Similar Supplies</h2>
           <span className="dummy_data_para">
             Therapeutic biosimilars provide patients with more treatment
@@ -187,7 +35,7 @@ export default function Services() {
         </div>
     
         <div class="services_content">
-        <div class="service_image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
+        <div class="service_image"><img src="/assets/images/government.png" alt="" height={'100px'} width={'100px'}/></div>
           <h2>Government Supplies</h2>
           <span className="dummy_data_para">
             With complete trust care and attention Gandhi Medicos provides the
@@ -196,7 +44,7 @@ export default function Services() {
         </div>
     
         <div class="services_content">
-        <div class="service_image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
+        <div class="service_image"><img src="/assets/images/orphanage.png" alt="" height={'100px'} width={'100px'}/></div>
           <h2>Orphan Drug Supplies</h2>
           <span className="dummy_data_para">
             Vagrant medicines are frequently made to treat a small number of
@@ -206,7 +54,7 @@ export default function Services() {
         </div>
     
         <div class="services_content">
-        <div class="service_image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
+        <div class="service_image"><img src="/assets/images/temperature.png" alt="" height={'100px'} width={'100px'}/></div>
           <h2>Temperature Controlled</h2>
           <span className="dummy_data_para">
             Gandhi Medicos offers comprehensive shipping, storage, and end-to-end
