@@ -50,10 +50,8 @@ function Brand({ data, type, className }) {
   return (
     <LayoutFour title={"Shop"}>
       <Breadcrumb title="Our Brands">
-        <div className="title">
           <BreadcrumbItem name="Home" />
           <BreadcrumbItem name="Our Brands" current />
-        </div>
       </Breadcrumb>
       
           

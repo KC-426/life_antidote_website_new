@@ -95,4 +95,8 @@
   .col-sm-6 {
     flex: 0 0 calc(50% - 20px);
   }
+  .brand-cards{
+    align-items: center;
+margin-left: 20px;
+  }
 }
