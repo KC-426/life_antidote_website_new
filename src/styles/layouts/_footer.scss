@@ -87,7 +87,7 @@
     }
   }
   &__body {
-    padding-bottom: emCal(16, 50);
+    padding-bottom: 1rem;
     .footer__section {
       @include mq(lg) {
         margin-bottom: emCal(16, 30);

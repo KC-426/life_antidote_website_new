@@ -15,7 +15,7 @@
       height: 490px;
     }
     @include mq(md) {
-      margin-bottom: remCal(50);
+      margin-bottom: 0.125rem;
       height: 600px;
     }
     @include mq(sm) {
