@@ -24,8 +24,8 @@ export default function IntroductionOne({ data }) {
             {/* <div className="display_main_data"> */}
             <div className="introduction-one__image">
               <div className="introduction-one__image__detail">
-                <img src="/assets/images/cancer.jpg" alt="background" />
                 <img src="/assets/images/cancer2.jpg" alt="background" />
+                <img src="/assets/images/cancer.jpg" alt="background" />
               </div>
               <div className="wrapper">
                 <div className="introduction-one__image__background">
