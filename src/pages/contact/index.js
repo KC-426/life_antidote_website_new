@@ -113,7 +113,14 @@ export default function () {
                   />
 
                   </div>
-                  <button className="btn -dark" type="submit" onClick={sendMail}>SEND MESSAGE</button>
+                  <button style={{
+                    color:"white",
+                    backgroundColor:"#1a7be9",
+                    border:"none",
+                    fontWeight:"bold",
+                    padding:"12px",
+                    borderRadius:"5px"
+                  }} type="submit" onClick={sendMail}>SEND MESSAGE</button>
                 </form>
               </div>
             </div>

@@ -5,7 +5,7 @@ export default function SocialIcons({ className, colored }) {
     <ul className={`${classNames(className)} social-icons`}>
       <li>
         <a
-          style={{ color: colored && "#2463ac" }}
+          style={{ color: colored && "blue" }}
           href="https://www.facebook.com/"
         >
           <i className="fab fa-facebook-f" />

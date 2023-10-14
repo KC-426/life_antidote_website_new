@@ -3,24 +3,24 @@ import { FaUsers, FaGlobeAsia, FaShoppingBasket } from 'react-icons/fa';
 import { MdDiscount } from 'react-icons/md';
 
 const Counter = () => {
-  const [happyCustomers, setHappyCustomers] = useState(0);
+  const [healthyCustomers, setHappyCustomers] = useState(0);
   const [products, setProducts] = useState(0);
   const [brands, setBrands] = useState(0);
   const [countries, setCountries] = useState(0);
 
   const targetValues = {
-    happyCustomers: 21900,
-    products: 326,
-    brands: 311,
+    HealthyCustomers: 1500,
+    Products: 326,
+    Brands: 311,
     countries: 190,
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
      
-      setHappyCustomers(prevCount => Math.min(prevCount + 1, targetValues.happyCustomers));
-      setProducts(prevCount => Math.min(prevCount + 1, targetValues.products));
-      setBrands(prevCount => Math.min(prevCount + 1, targetValues.brands));
+      setHappyCustomers(prevCount => Math.min(prevCount + 1, targetValues.HealthyCustomers));
+      setProducts(prevCount => Math.min(prevCount + 1, targetValues.Products));
+      setBrands(prevCount => Math.min(prevCount + 1, targetValues.Brands));
       setCountries(prevCount => Math.min(prevCount + 1, targetValues.countries));
     }, 150); 
 
@@ -36,8 +36,8 @@ const Counter = () => {
           <div className="font_data">
             <h3><FaUsers /></h3>
           </div>
-          <div className='counter_main'>{happyCustomers}+</div> <br />
-          <p>Happy Customers</p>
+          <div className='counter_main'>{healthyCustomers}+</div> <br />
+          <p>Healthy Customers</p>
         </div>
 
         <div className="no1">

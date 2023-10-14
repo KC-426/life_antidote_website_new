@@ -72,6 +72,7 @@
         margin-top: emCal(16, 30);
         .social-icons {
           width: 100%;
+          
         }
       }
       @include mq(md) {
@@ -138,7 +139,8 @@
                 position: absolute;
                 top: 50%;
                 left: -100%;
-                background-color: #f2646061;
+                // background-color: #f2646061;
+                background-color: rgba(4, 136, 141, 0.3137254902);
                 height: emCal(15, 8);
                 width: 100%;
                 z-index: 0;
@@ -173,7 +175,9 @@
       justify-content: space-between;
       flex-wrap: wrap;
       p {
-        @include typo($fsz: emCal(16, 14), $color: setShadeColor(medium));
+        
+         @include typo($fsz: emCal(16, 14), $color: setShadeColor(medium));
+        
         @include mq(md) {
           margin-bottom: emCal(14, 15);
         }
@@ -183,7 +187,10 @@
         li {
           display: inline-block;
           a {
-            @include link($fsz: emCal(16, 14), $color: setShadeColor(medium));
+            @include link($fsz: emCal(16, 14),$color: setShadeColor(medium));
+            &:hover{
+              $color:#1a7be9;
+            }
           }
           &::after {
             content: "|";
@@ -252,3 +259,4 @@
 margin: auto !important;
 }
 }
+

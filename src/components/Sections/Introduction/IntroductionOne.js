@@ -24,8 +24,12 @@ export default function IntroductionOne({ data }) {
             {/* <div className="display_main_data"> */}
             <div className="introduction-one__image">
               <div className="introduction-one__image__detail">
-                <img src="/assets/images/cancer2.jpg" alt="background" />
-                <img src="/assets/images/cancer_.jpg" alt="background" />
+                <img src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/321749_2200-800x1200.jpg" alt="background" />
+                <img src="/assets/images/cancer_.jpg" style={{
+                  height: 600,
+                  width: 800,
+                  objectFit:"cover"
+                }} alt="background" />
               </div>
               <div className="wrapper">
                 <div className="introduction-one__image__background">

@@ -9,7 +9,7 @@
     margin-bottom: emCal(16, 30);
     &__icon {
       width: emCal(16, 30);
-      @include typo($fsz: emCal(16, 18), $color: setColor(red));
+      @include typo($fsz: emCal(16, 18), $color: setColor(blue));
     }
     &__detail {
       h3 {

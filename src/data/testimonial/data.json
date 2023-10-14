@@ -4,7 +4,7 @@
     "image": "/assets/images/testimonial/TestimonialOne/1.png",
     "name": "Alexander Ball",
     "city": "New York",
-    "review": "I love my lash tint! I don't have extremely blonde lashes, but I do like that they can be even darker than they are. It makes my eyes stand out more and I love the way it looks! Now, I just need to add on a bit of mascara for length and I am set.",
+    "review": "Life Antidote Pharmaceuticals played a pivotal role in my battle against a rare form of cancer. Their specialized oncology medications and unwavering support made the journey towards remission possible. I'm grateful for their commitment to patients like me.",
     "rate": 4
   },
   {
@@ -12,7 +12,7 @@
     "image": "/assets/images/testimonial/TestimonialOne/2.png",
     "name": "Izabel Watt",
     "city": "Michigan",
-    "review": "I love my lash tint! I don't have extremely blonde lashes, but I do like that they can be even darker than they are. It makes my eyes stand out more and I love the way it looks! Now, I just need to add on a bit of mascara for length and I am set.",
+    "review": "Hepatitis B was a silent threat until I found Life Antidote. Their expertly sourced antiviral medications have helped me manage this condition effectively. Their dedication to Hepatitis B patients is truly commendable.",
     "rate": 4
   },
   {
@@ -20,7 +20,7 @@
     "image": "/assets/images/testimonial/TestimonialOne/3.png",
     "name": "Rachel Regan",
     "city": "Sydney",
-    "review": "I love my lash tint! I don't have extremely blonde lashes, but I do like that they can be even darker than they are. It makes my eyes stand out more and I love the way it looks! Now, I just need to add on a bit of mascara for length and I am set.",
+    "review" : "Life Antidote's HIV treatment regimens have been a game-changer for me. Their combination therapies, including tenofovir and emtricitabine, have helped me achieve viral suppression and improved my overall well-being.",
     "rate": 4
   },
   {
@@ -28,7 +28,7 @@
     "image": "/assets/images/testimonial/TestimonialOne/4.png",
     "name": "Malika Kenny",
     "city": "Ha Noi",
-    "review": "I love my lash tint! I don't have extremely blonde lashes, but I do like that they can be even darker than they are. It makes my eyes stand out more and I love the way it looks! Now, I just need to add on a bit of mascara for length and I am set.",
+    "review": "As a patient with a rare genetic disorder, I had almost lost hope until I discovered Life Antidote's orphan drug supply. Their commitment to providing access to these life-saving medications has been a lifeline for me and others facing rare diseases.",
     "rate": 4
   },
   {
@@ -36,31 +36,7 @@
     "image": "/assets/images/testimonial/TestimonialOne/5.png",
     "name": "Javier Bender",
     "city": "Tokyo",
-    "review": "I love my lash tint! I don't have extremely blonde lashes, but I do like that they can be even darker than they are. It makes my eyes stand out more and I love the way it looks! Now, I just need to add on a bit of mascara for length and I am set.",
-    "rate": 4
-  },
-  {
-    "id": 6,
-    "image": "/assets/images/testimonial/TestimonialOne/6.png",
-    "name": "Paul Brookes",
-    "city": "Berlin",
-    "review": "I love my lash tint! I don't have extremely blonde lashes, but I do like that they can be even darker than they are. It makes my eyes stand out more and I love the way it looks! Now, I just need to add on a bit of mascara for length and I am set.",
-    "rate": 4
-  },
-  {
-    "id": 7,
-    "image": "/assets/images/testimonial/TestimonialOne/7.png",
-    "name": "Bilaal Gunn",
-    "city": "Denver",
-    "review": "I love my lash tint! I don't have extremely blonde lashes, but I do like that they can be even darker than they are. It makes my eyes stand out more and I love the way it looks! Now, I just need to add on a bit of mascara for length and I am set.",
-    "rate": 4
-  },
-  {
-    "id": 8,
-    "image": "/assets/images/testimonial/TestimonialOne/8.png",
-    "name": "Musab O'Sullivan",
-    "city": "Paris",
-    "review": "I love my lash tint! I don't have extremely blonde lashes, but I do like that they can be even darker than they are. It makes my eyes stand out more and I love the way it looks! Now, I just need to add on a bit of mascara for length and I am set.",
+    "review": "Life Antidote's dedication to patient care goes beyond words. Their support for people like me, living with rare diseases, is nothing short of exceptional. The availability of specialized medications and their comprehensive services have made a significant impact on our lives.",
     "rate": 4
   }
 ]

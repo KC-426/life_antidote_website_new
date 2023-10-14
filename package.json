@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next dev",
+    "dev": " next dev",
     "build": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next build",
     "start": "next start -p $PORT",
     "heroku-postbuild": "npm run build"
@@ -17,6 +17,7 @@
     "axios": "^1.4.0",
     "bootstrap": "^4.5.0",
     "classnames": "^2.2.6",
+    "components": "^0.1.0",
     "cross-env": "^7.0.3",
     "emailjs": "^4.0.2",
     "gsap": "^3.3.3",
@@ -51,6 +52,8 @@
     "redux-thunk": "^2.3.0",
     "sass": "^1.26.5",
     "slick-carousel": "^1.8.1",
+    "styled": "^1.0.0",
+    "styled-components": "^6.0.8",
     "swiper": "^5.4.1",
     "uuid": "^8.2.0"
   }

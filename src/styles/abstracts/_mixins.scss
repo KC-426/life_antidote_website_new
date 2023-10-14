@@ -21,7 +21,7 @@
 
 @mixin link(
   $color: setShadeColor(dark),
-  $hvr-color: setShadeColor(red),
+  $hvr-color: #1a7be9,
   $fsz: 14px,
   $fw: normal,
   $lh: 1,

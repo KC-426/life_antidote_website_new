@@ -31,9 +31,10 @@ import Benefits from "../components/Other/Benefits";
 import Carousel from "react-multi-carousel";
 import Link from "next/link";
 import Button from "../components/Control/Button";
+import Faq from "../components/Faq/Faq";
+import { MdSettingsBluetooth } from "react-icons/md";
 
 export default function homepage1() {
-
   // const [viewProducts, setViewProducts] = useState(false)
   // const handleClick = () => {
   //   setViewProducts(!viewProducts);
@@ -46,8 +47,9 @@ export default function homepage1() {
   const [product, setProduct] = useState([]);
   const [category, setCategory] = useState([]);
   const [banner, setBannner] = useState([]);
-  const [ mobile, setMobile ] = useState([]);
+  const [mobile, setMobile] = useState([]);
   const [brands, setBrands] = useState([]);
+  const [blogs, setBlogs] = useState([])
 
   const fetchData = async () => {
     try {
@@ -74,8 +76,13 @@ export default function homepage1() {
 
       const url_mobile = `${baseUrl}/api/mobile/get/all/banners`;
       const res_mobile = await axios.get(url_mobile, { withCredentials: true });
-      console.log(res_mobile)
+      console.log(res_mobile);
       setMobile(res_mobile.data);
+
+      const url_blogs = `${baseUrl}/api/admin/get/list/of/all/blogs`;
+      const res_blogs = await axios.get(url_blogs, {withCredentials: true})
+      setBlogs(res_blogs.data)
+
     } catch (err) {
       console.log(err);
     }
@@ -84,7 +91,7 @@ export default function homepage1() {
   useState(() => {
     fetchData();
   }, []);
-  
+
   console.log(data);
   console.log(category);
   console.log("main start", brands);
@@ -195,16 +202,19 @@ export default function homepage1() {
     },
   ];
 
-
   return (
     <LayoutOne title="Life Antidote" data={sliderData} className="-style-1">
       <SliderTwo data={data} className="-style-1" showDots />
       <SlideThree data={mobile} />
 
-      <SectionTitleOne align="center" spaceBottom="50px" className="sectionTitleOne_data">
-            Our Products
-          </SectionTitleOne>
-          
+      <SectionTitleOne
+        align="center"
+        spaceBottom="50px"
+        className="sectionTitleOne_data"
+      >
+       Signature Product, Precise Healing
+      </SectionTitleOne>
+
       <div className="container">
         <ShopProducts
           gridColClass="col-6 col-sm-6 col-md-4 col-lg-3"
@@ -215,12 +225,18 @@ export default function homepage1() {
       </div>
 
       <div className="view_products_page">
-      <Link href="/products" className="btn">
-         View Products
-      </Link>
-    </div>
+        <div
+          style={{
+            marginTop: 40,
+            marginBottom: 40,
+          }}
+        >
+          <Link href="/products" className="btn">
+            View Products
+          </Link>
+        </div>
+      </div>
 
- 
       {/* <IntroductionTwo data={introductionTwoData} />  */}
       <div>
         {/* <ShippingData /> */}
@@ -228,11 +244,11 @@ export default function homepage1() {
       </div>
       <div>
         <SectionTitleOne align="center" spaceBottom="20px">
-          Our Services
+        Pharmaceuticals Services Expertise
         </SectionTitleOne>
         <Services />
       </div>
-      
+
       <ProductSlideOne data={category} />
 
       <IntroductionOne data={introductionOneData} />
@@ -240,10 +256,10 @@ export default function homepage1() {
       <div className="brand-slide brands_homepage_slider">
         <div className="container">
           <SectionTitleOne align="center" spaceBottom="50px">
-            Our Brands
+          Top Brands, Endless Possibilities
           </SectionTitleOne>
 
-          <div className="brand-slider"style={{ zIndex: 6 }}>
+          <div className="brand-slider" style={{ zIndex: 6 }}>
             <Carousel responsive={responsive}>
               {brands?.map((data, index) => (
                 <div key={data._id}>
@@ -262,12 +278,10 @@ export default function homepage1() {
           </div>
 
           <div className="view_brands_page">
-      <Link href="/brands" className="btn">
-         View All Brands
-      </Link>
-    </div>
-
-
+            <Link href="/brands" className="btn">
+              View All Brands
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -277,7 +291,7 @@ export default function homepage1() {
         </div>
         <div className="container">
           <SectionTitleOne align="center" spaceBottom="50px">
-            Client Reviews
+          Words of Appreciation
           </SectionTitleOne>
 
           <div className="product-slider video_reviews_slider">
@@ -298,7 +312,7 @@ export default function homepage1() {
                   <div className="title country">{data.title}</div>
                 </div>
               ))}
-             </Carousel>
+            </Carousel>
           </div>
         </div>
       </div>
@@ -306,6 +320,32 @@ export default function homepage1() {
       <TestimonialOne data={testimonialOneData} />
       {/* <TeamOne data={teamOneData} /> */}
       {/* <CTAOne /> */}
+
+
+      <div className="blog-card-container">
+  {blogs?.map(data => (
+    <div className="blog-card">
+      <img
+        src={data.blog_image.image_url}
+        width="200"
+        height="400"
+        alt={data.blog_title}
+      />
+      <div className="title">{data.blog_title}</div>
+      <div className="description">{data.about_blog}</div>
+    </div>
+  ))}
+</div>
+
+<div className="view_brands_page blogs_data">
+            <Link href="/blogs" className="btn">
+              View All Blogs
+            </Link>
+          </div>
+
+
+
+      <Faq />
     </LayoutOne>
   );
 }

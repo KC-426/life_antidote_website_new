@@ -1,69 +1,116 @@
 export default function Services() {
-    return(
-      <div className="container">
+  return (
+    <div className="container">
+      {/* <div className="header_heading_data"><span>Pharmaceutical Export Services</span></div> */}
+      <div class="services_main_data">
+        <div class="services_content">
+          <div class="service_image">
+            <img
+              src="/assets/images/supplies.png"
+              alt=""
+              height={"100px"}
+              width={"100px"}
+            />
+          </div>
+          <h2>Customized Hospital Formularies</h2>
+          <span className="dummy_data_para">
+            Life Antidote offers hospitals that are specifically designed and
+            updated to maximize pharmaceutical selections depending on patient
+            groups and treatment regimens. It also works together with hospitals
+            to customize pharmaceutical supply solutions.
+          </span>
+        </div>
 
-          
-            {/* <div className="header_heading_data"><span>Pharmaceutical Export Services</span></div> */}
-        <div class="services_main_data">
         <div class="services_content">
-          <div class="service_image"><img src="/assets/images/supplies.png" alt="" height={'100px'} width={'100px'}/></div>
-          <h2>Hospital Supplies</h2>
+          <div class="service_image">
+            <img
+              src="/assets/images/clinical trial.png"
+              alt=""
+              height={"100px"}
+              width={"100px"}
+            />
+          </div>
+          <h2>Clinical Trials</h2>
           <span className="dummy_data_para">
-            Pharmaceutical services are supplied and exported through Gandhi
-            Medicos to hospitals all over the world. We are quality medication
-            exporter and supplier on a global scale.
+            Life Antidote conducts clinical trials to investigate and advance
+            novel drugs and treatments. The patients who participate in these
+            studies have access to cutting-edge treatments before they are
+            generally used, which promotes medical innovation.
           </span>
         </div>
-    
+
         <div class="services_content">
-        <div class="service_image"><img src="/assets/images/clinical trial.png" alt="" height={'100px'} width={'100px'}/></div>
-          <h2>Clinical Trial Supplies</h2>
+          <div class="service_image">
+            <img
+              src="/assets/images/bio.png"
+              alt=""
+              height={"100px"}
+              width={"100px"}
+            />
+          </div>
+          <h2>Supply Chain Management</h2>
           <span className="dummy_data_para">
-            This isn't the only thing that attracts to Gandhi Medicos. Other
-            products and clinical items can be used by organisations that want to
-            perform clinical trials directly.
+            Ensuring a robust and effective supply chain to avoid pharmaceutical
+            shortages and preserve product quality. Life Antidote is also
+            implementing strict cold chain management protocols for vaccines and
+            biologics to ensure their safety.
           </span>
         </div>
-    
+
         <div class="services_content">
-        <div class="service_image"><img src="/assets/images/bio.png" alt="" height={'100px'} width={'100px'}/></div>
-          <h2>Bio Similar Supplies</h2>
+          <div class="service_image">
+            <img
+              src="/assets/images/medicine.png"
+              alt=""
+              height={"100px"}
+              width={"100px"}
+            />
+          </div>
+          <h2>Specialty Medicine Supply</h2>
           <span className="dummy_data_para">
-            Therapeutic biosimilars provide patients with more treatment
-            alternatives and the possibility of lower-cost healthcare services.
+            Life Antidote provides a variety of specialist medications and
+            therapies for rare diseases and cutting-edge treatments, among other
+            uncommon conditions. We are devoted to ensuring patient access to
+            these critical, cutting-edge medical treatments
           </span>
         </div>
-    
+
         <div class="services_content">
-        <div class="service_image"><img src="/assets/images/government.png" alt="" height={'100px'} width={'100px'}/></div>
-          <h2>Government Supplies</h2>
-          <span className="dummy_data_para">
-            With complete trust care and attention Gandhi Medicos provides the
-            government with world-class pharmaceutical exports.
-          </span>
-        </div>
-    
-        <div class="services_content">
-        <div class="service_image"><img src="/assets/images/orphanage.png" alt="" height={'100px'} width={'100px'}/></div>
+          <div class="service_image">
+            <img
+              src="/assets/images/orphanage.png"
+              alt=""
+              height={"100px"}
+              width={"100px"}
+            />
+          </div>
           <h2>Orphan Drug Supplies</h2>
           <span className="dummy_data_para">
-            Vagrant medicines are frequently made to treat a small number of
-            patients who are suffering from the side effects of unusual infections
-            and disorders.
+            At Life Antidote, we are aware of the unique challenges and
+            compelling needs that patients with rare diseases face. Our orphan
+            medicine supply services are meant to provide a ray of hope to
+            persons suffering from these uncommon medical diseases.
           </span>
         </div>
-    
+
         <div class="services_content">
-        <div class="service_image"><img src="/assets/images/temperature.png" alt="" height={'100px'} width={'100px'}/></div>
+          <div class="service_image">
+            <img
+              src="/assets/images/temperature.png"
+              alt=""
+              height={"100px"}
+              width={"100px"}
+            />
+          </div>
           <h2>Temperature Controlled</h2>
           <span className="dummy_data_para">
-            Gandhi Medicos offers comprehensive shipping, storage, and end-to-end
-            production network arrangements to meet all of your
-            temperature-sensitive medicinal requirements.
+            We maintain strict temperature ranges for sensitive drugs during
+            warehousing and distribution. This method protects the efficacy and
+            integrity of critical pharmaceuticals, ensuring patients and
+            healthcare professionals of their quality.
           </span>
         </div>
       </div>
-      </div>
-    )
+    </div>
+  );
 }
-
